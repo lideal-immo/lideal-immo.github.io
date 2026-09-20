@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>L'IDEAL IMMO — Agence immobilière à Bordeaux | Achat, vente, estimation</title>
+<meta name="description" content="L'IDEAL IMMO, agence immobilière indépendante à Bordeaux et en Gironde. Laurent Duchesne vous accompagne pour acheter, vendre ou faire estimer votre bien : maisons, appartements, terrains, locaux commerciaux." />
+<link rel="canonical" href="https://www.lideal-immo.fr/" />
+<meta name="geo.region" content="FR-33" />
+<meta name="geo.placename" content="Bordeaux, Gironde" />
+<link rel="icon" href="https://www.lideal-immo.fr/wp-content/uploads/go-x/u/2e87c1be-5ca8-474a-8aa0-430903621f1f/l0,t0,w229,h158/image.png" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="L'IDEAL IMMO — Agence immobilière à Bordeaux" />
+<meta property="og:description" content="Acheter, vendre, faire estimer : un accompagnement personnalisé à Bordeaux et en Gironde." />
+<meta property="og:image" content="https://www.lideal-immo.fr/wp-content/uploads/go-x/u/2e87c1be-5ca8-474a-8aa0-430903621f1f/l0,t0,w229,h158/image.png" />
+<meta property="og:url" content="https://www.lideal-immo.fr/" />
+<meta property="og:locale" content="fr_FR" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"RealEstateAgent","name":"L'IDEAL IMMO","url":"https://www.lideal-immo.fr/","email":"laurent.duchesne@lideal-immo.fr","telephone":"+33668500769","founder":{"@type":"Person","name":"Laurent Duchesne"},"address":{"@type":"PostalAddress","addressLocality":"Bordeaux","addressRegion":"Gironde","addressCountry":"FR"},"areaServed":["Bordeaux","Gironde","Nouvelle-Aquitaine"],"sameAs":["https://www.facebook.com/profile.php?id=61564937172190"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+
+/* ============================================================
+   L'IDEAL IMMO — Feuille de style
+   Mise en page et charte inspirées des portails immobiliers
+   institutionnels (type fnaim.fr) : bleu, orange, angles droits.
+   ============================================================ */
+:root{
+  --dark-900:#0d0d0d;   /* fond logo, hero, pied de page */
+  --dark-800:#141414;   /* surfaces sombres */
+  --dark-700:#1e1e1e;   /* cartes fond sombre */
+  --dark-500:#2e2e2e;   /* bordures sombres */
+  --dark-300:#4a4540;   /* textes muted sur fond sombre */
+
+  --gold:#c9a84c;       /* couleur principale – logo */
+  --gold-light:#e0be72; /* survol, accents doux */
+  --gold-deep:#a37828;  /* textes or sur fond clair */
+  --gold-pale:#f7f0df;  /* fonds de section clairs */
+  --gold-soft:#efe3c4;  /* bordures, séparateurs chauds */
+
+  --ink:#1a1714;        /* texte principal sur fond clair */
+  --muted:#6b6055;      /* texte secondaire */
+  --line:#e2d9c8;       /* bordures sur fond clair */
+  --white:#fff;
+  --off-white:#faf7f2;  /* fond de page (légèrement chaud) */
+
+  --max:1180px;
+  --shadow:0 1px 4px rgba(13,13,13,.10);
+  --shadow-lg:0 6px 22px rgba(13,13,13,.18);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:132px}
+body{
+  margin:0;background:var(--off-white);color:var(--ink);
+  font-family:'Source Sans 3','Segoe UI',Arial,sans-serif;
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--gold-deep);text-decoration:none}
+a:hover{color:var(--gold)}
+button{font-family:inherit}
+h1,h2,h3,h4{margin:0;font-weight:700;color:var(--ink);line-height:1.25}
+.container{max-width:var(--max);margin:0 auto;padding:0 20px}
+.section{padding:52px 0}
+.section.alt{background:var(--gold-pale)}
+.section.tight{padding:36px 0}
+
+/* Titre de section : barre orange sous le titre (codes FNAIM) */
+.sec-title{font-size:1.65rem;margin-bottom:6px}
+.sec-title .thin{font-weight:400;color:var(--muted)}
+.sec-rule{width:64px;height:4px;background:var(--gold);margin:12px 0 22px}
+.sec-head{margin-bottom:26px}
+.sec-head p{margin:0;color:var(--muted);max-width:720px}
+.sec-head.center{text-align:center}
+.sec-head.center .sec-rule{margin-left:auto;margin-right:auto}
+
+/* ---------- Bandeau utilitaire ---------- */
+.utility{background:var(--dark-900);color:#c9b988;font-size:.82rem}
+.utility .container{display:flex;align-items:center;justify-content:space-between;gap:16px;height:38px}
+.utility a{color:#c9b988}
+.utility a:hover{color:var(--white)}
+.utility .u-left,.utility .u-right{display:flex;align-items:center;gap:18px}
+.utility .sep{width:1px;height:16px;background:rgba(255,255,255,.22)}
+
+/* ---------- En-tête ---------- */
+.header{position:sticky;top:0;z-index:60;background:var(--white);border-bottom:1px solid var(--gold-soft);box-shadow:var(--shadow)}
+.header .container{display:flex;align-items:center;gap:22px;height:92px}
+.logo-plate{
+  background:#000;padding:8px 12px;display:flex;align-items:center;justify-content:center;
+  flex:0 0 auto;height:66px
+}
+.logo-plate img{height:100%;width:auto;object-fit:contain}
+.brand-txt{display:none;flex-direction:column;line-height:1.15;margin-right:auto}
+.brand-txt b{font-size:1.02rem;color:var(--ink);letter-spacing:.02em}
+.brand-txt span{font-size:.78rem;color:var(--muted)}
+.mainnav{margin-left:auto;display:flex;align-items:center;gap:2px}
+.mainnav a{
+  padding:12px 13px;font-size:.92rem;font-weight:600;color:var(--ink);
+  border-bottom:3px solid transparent
+}
+.mainnav a:hover,.mainnav a.on{color:var(--gold-deep);border-bottom-color:var(--gold)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 22px;font-weight:700;font-size:.92rem;cursor:pointer;border:none;
+  background:var(--gold);color:var(--dark-900);transition:background .18s
+}
+.btn:hover{background:var(--gold-light);color:var(--dark-900)}
+.btn-dark{background:var(--dark-900)}
+.btn-dark:hover{background:var(--dark-800)}
+.btn-outline{background:transparent;color:var(--gold-deep);border:2px solid var(--gold)}
+.btn-outline:hover{background:var(--gold);color:var(--dark-900)}
+.btn-sm{padding:9px 16px;font-size:.86rem}
+.burger{display:none;background:none;border:1px solid var(--line);padding:9px 11px;cursor:pointer;font-size:1.1rem}
+
+/* ---------- Hero + moteur de recherche ---------- */
+.hero{position:relative;background:#0d0d0d;color:var(--white);overflow:hidden}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:
+    linear-gradient(110deg, #0d0d0d 0%, #1a1714 55%, #222010 100%),
+    radial-gradient(760px 400px at 90% 10%, rgba(201,168,76,.22), transparent 62%);
+}
+.hero .container{position:relative;padding-top:52px;padding-bottom:56px}
+.hero h1{color:var(--white);font-size:clamp(1.9rem,3.6vw,2.7rem);max-width:760px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .lead{margin:14px 0 0;max-width:640px;color:#c9b988;font-size:1.06rem}
+
+.searchbox{margin-top:30px;background:var(--white);box-shadow:var(--shadow-lg)}
+.sb-tabs{display:flex;border-bottom:1px solid var(--line);background:#f5f0e8}
+.sb-tab{
+  flex:0 0 auto;padding:14px 26px;background:none;border:none;cursor:pointer;
+  font-weight:700;font-size:.94rem;color:var(--ink);border-bottom:3px solid transparent
+}
+.sb-tab.on{background:var(--white);color:var(--gold-deep);border-bottom-color:var(--gold)}
+.sb-body{padding:20px}
+.sb-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr auto;gap:12px;align-items:end}
+.fld label{display:block;font-size:.76rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.fld input,.fld select,.fld textarea{
+  width:100%;border:1px solid var(--line);background:var(--white);
+  padding:12px 12px;font:inherit;font-size:.94rem;color:var(--ink);border-radius:0
+}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:2px solid var(--gold);outline-offset:-1px}
+.sb-note{margin:14px 0 0;font-size:.84rem;color:var(--muted)}
+.sb-pane{display:none}
+.sb-pane.on{display:block}
+
+/* ---------- Bandeau confiance (pictos) ---------- */
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);background:var(--white)}
+.trust-item{display:flex;gap:16px;align-items:flex-start;padding:26px 24px;border-right:1px solid var(--line)}
+.trust-item:last-child{border-right:none}
+.trust-ic{
+  flex:0 0 auto;width:54px;height:54px;border-radius:50%;background:var(--gold-pale);
+  display:grid;place-items:center;font-size:1.5rem;border:2px solid var(--gold)
+}
+.trust-item h3{font-size:1.02rem;margin-bottom:4px}
+.trust-item p{margin:0;font-size:.9rem;color:var(--muted)}
+.trust-item a{font-weight:700;font-size:.88rem}
+
+/* ---------- Cartes de biens ---------- */
+.results-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.results-bar .count{font-size:.92rem;color:var(--muted)}
+.results-bar .count b{color:var(--ink)}
+.chipline{display:flex;gap:8px;flex-wrap:wrap}
+.chip{
+  border:1px solid var(--line);background:var(--white);padding:7px 14px;font-size:.84rem;
+  font-weight:600;color:var(--ink);cursor:pointer
+}
+.chip.on{background:var(--gold);border-color:var(--gold-deep);color:var(--white)}
+
+.grid-biens{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.bien{background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column;cursor:pointer;transition:box-shadow .2s,transform .2s}
+.bien:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+.bien-img{position:relative;height:200px;background:var(--gold-pale);overflow:hidden}
+.bien-img img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
+.bien:hover .bien-img img{transform:scale(1.05)}
+.flags{position:absolute;top:0;left:0;display:flex;flex-direction:column;align-items:flex-start;gap:0}
+.flag{background:var(--dark-900);color:var(--white);font-size:.72rem;font-weight:700;padding:6px 12px;text-transform:uppercase;letter-spacing:.04em}
+.flag.gold{background:var(--gold);color:var(--dark-900)}
+.flag.grey{background:#6b7b8d}
+.bien-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.bien-type{font-size:.76rem;font-weight:700;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.05em}
+.bien-body h3{font-size:1.06rem;margin:5px 0 3px}
+.bien-city{font-size:.88rem;color:var(--muted)}
+.specs{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0}
+.specs span{border:1px solid var(--line);padding:4px 9px;font-size:.78rem;color:var(--muted);font-weight:600}
+.bien-foot{margin-top:auto;padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--line);margin-top:14px}
+.bien-price{font-size:1.28rem;font-weight:700;color:var(--ink)}
+.bien-more{font-size:.85rem;font-weight:700;color:var(--gold-deep)}
+.empty{grid-column:1/-1;border:1px dashed var(--line);padding:46px 20px;text-align:center;color:var(--muted)}
+.center-cta{text-align:center;margin-top:30px}
+
+/* ---------- Bandeau d'appel à l'action ---------- */
+.cta-band{background:var(--dark-900);color:var(--white)}
+.cta-band .container{display:flex;align-items:center;justify-content:space-between;gap:26px;padding-top:34px;padding-bottom:34px;flex-wrap:wrap}
+.cta-band h2{color:var(--gold);font-size:1.5rem}
+.cta-band p{margin:6px 0 0;color:#c9b988}
+
+/* ---------- Colonnes de conseils (style FNAIM) ---------- */
+.advice{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.advice-col h3{font-size:1.06rem;padding-bottom:10px;border-bottom:2px solid var(--gold);margin-bottom:12px}
+.advice-col ul{list-style:none;margin:0;padding:0}
+.advice-col li{border-bottom:1px solid var(--line)}
+.advice-col li a{display:block;padding:9px 0;font-size:.92rem;color:var(--ink)}
+.advice-col li a::before{content:'›';color:var(--gold-deep);font-weight:700;margin-right:8px}
+.advice-col li a:hover{color:var(--gold-deep)}
+
+/* ---------- Actualités ---------- */
+.grid-news{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.newsitem{background:var(--white);border:1px solid var(--line);cursor:pointer;display:flex;flex-direction:column}
+.newsitem:hover{box-shadow:var(--shadow-lg)}
+.newsitem .ni-img{height:170px;overflow:hidden;background:var(--gold-pale)}
+.newsitem .ni-img img{width:100%;height:100%;object-fit:cover}
+.newsitem .ni-body{padding:16px 18px 20px}
+.ni-date{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.newsitem h3{font-size:1.04rem;margin:6px 0 8px}
+.newsitem p{margin:0;font-size:.9rem;color:var(--muted)}
+.ni-read{display:inline-block;margin-top:12px;font-size:.85rem;font-weight:700;color:var(--gold-deep)}
+
+/* ---------- Deux colonnes (simulateur / honoraires) ---------- */
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.panelbox{background:var(--white);border:1px solid var(--line)}
+.panelbox .pb-head{background:var(--dark-900);color:var(--gold);padding:14px 20px;font-weight:700}
+.panelbox .pb-body{padding:20px}
+.sim-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sim-res{background:var(--gold-pale);border:1px solid var(--line);padding:18px;margin-top:16px}
+.sim-res .big{font-size:2rem;font-weight:700;color:var(--ink);line-height:1.1}
+.sim-res .big small{display:block;font-size:.8rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.sim-res ul{list-style:none;margin:14px 0 0;padding:0}
+.sim-res li{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:8px 0;font-size:.9rem}
+.sim-res li b{color:var(--ink)}
+.legal{font-size:.8rem;color:var(--muted);margin-top:12px}
+table.tbl{width:100%;border-collapse:collapse}
+table.tbl th{background:var(--gold-pale);text-align:left;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--ink);padding:11px 14px;border:1px solid var(--line)}
+table.tbl td{padding:11px 14px;border:1px solid var(--line);font-size:.92rem}
+table.tbl td:last-child{text-align:right;font-weight:700;color:var(--gold-deep);white-space:nowrap}
+
+/* ---------- L'agence ---------- */
+.agency{display:grid;grid-template-columns:300px 1fr;gap:38px;align-items:start}
+.agency .portrait{border:1px solid var(--line);padding:8px;background:var(--white)}
+.agency p{color:var(--muted)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);margin-top:24px}
+.kpi{padding:20px 16px;text-align:center;border-right:1px solid var(--line)}
+.kpi:last-child{border-right:none}
+.kpi b{display:block;font-size:1.9rem;color:var(--gold-deep);line-height:1}
+.kpi span{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:26px;border-top:3px solid var(--line)}
+.tl-i{padding:16px 14px 0;border-right:1px solid var(--line);position:relative}
+.tl-i:last-child{border-right:none}
+.tl-i::before{content:'';position:absolute;top:-8px;left:0;width:13px;height:13px;border-radius:50%;background:var(--gold)}
+.tl-i b{display:block;color:var(--gold-deep);font-size:1.05rem}
+.tl-i span{font-size:.86rem;color:var(--muted)}
+
+/* ---------- Témoignages ---------- */
+.grid-quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.quote{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--gold);padding:22px;cursor:pointer}
+.quote:hover{box-shadow:var(--shadow-lg)}
+.quote p{margin:0;font-size:.95rem;color:var(--ink)}
+.quote .qa{margin-top:16px;font-size:.86rem}
+.quote .qa b{display:block;color:var(--ink)}
+.quote .qa span{color:var(--muted)}
+
+/* ---------- Contact ---------- */
+.contact{display:grid;grid-template-columns:1.25fr .75fr;gap:32px;align-items:start}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-grid .full{grid-column:1/-1}
+.consent{display:flex;gap:9px;align-items:flex-start;font-size:.86rem;color:var(--muted)}
+.consent input{width:auto;margin-top:4px}
+.infobox{border:1px solid var(--line)}
+.infobox .ib-row{display:flex;gap:13px;align-items:flex-start;padding:15px 18px;border-bottom:1px solid var(--line)}
+.infobox .ib-row:last-child{border-bottom:none}
+.ib-ic{flex:0 0 auto;width:36px;height:36px;background:var(--gold-pale);display:grid;place-items:center}
+.ib-row b{display:block;color:var(--ink);font-size:.95rem}
+.ib-row span{font-size:.88rem;color:var(--muted)}
+.hours{width:100%;border-collapse:collapse;font-size:.9rem}
+.hours td{padding:7px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-weight:700;color:var(--ink)}
+.hours tr:last-child td{border-bottom:none}
+
+/* ---------- Pied de page ---------- */
+.footer{background:var(--dark-900);color:#c9b988;font-size:.9rem}
+.footer a{color:#c9b988}
+.footer a:hover{color:var(--gold)}
+.f-top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 0;border-bottom:1px solid rgba(201,168,76,.25);flex-wrap:wrap}
+.f-logo{background:#000;padding:8px 12px;height:62px;display:flex;align-items:center}
+.f-logo img{height:100%;width:auto;object-fit:contain}
+.f-social{display:flex;gap:10px}
+.f-social a{width:38px;height:38px;border:1px solid rgba(255,255,255,.28);display:grid;place-items:center}
+.f-social a:hover{background:var(--gold);border-color:var(--gold);color:var(--dark-900)}
+.f-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;padding:30px 0}
+.f-cols h4{color:var(--gold);font-size:.95rem;margin-bottom:12px;text-transform:uppercase;letter-spacing:.05em}
+.f-cols ul{list-style:none;margin:0;padding:0}
+.f-cols li{padding:5px 0}
+.f-zones{border-top:1px solid rgba(255,255,255,.14);padding:22px 0}
+.f-zones h4{color:var(--gold);font-size:.95rem;margin-bottom:12px;text-transform:uppercase;letter-spacing:.05em}
+.f-zones .zlist{display:flex;flex-wrap:wrap;gap:8px 10px}
+.f-zones .zlist span{border:1px solid rgba(201,168,76,.35);padding:5px 11px;font-size:.84rem}
+.f-legal{border-top:1px solid rgba(201,168,76,.20);padding:18px 0 28px;font-size:.82rem;color:#9fb4cd}
+.f-legal .flinks{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+
+/* ---------- Fenêtre modale ---------- */
+.backdrop{position:fixed;inset:0;background:rgba(10,42,84,.62);display:none;align-items:flex-start;justify-content:center;padding:28px 16px;z-index:90;overflow-y:auto}
+.backdrop.open{display:flex}
+.modal{background:var(--white);max-width:960px;width:100%;position:relative;box-shadow:var(--shadow-lg)}
+.modal .x{position:absolute;top:0;right:0;width:44px;height:44px;background:var(--dark-900);color:#fff;border:none;font-size:1.05rem;cursor:pointer;z-index:3}
+.m-grid{display:grid;grid-template-columns:1.05fr 1fr}
+.m-media{position:relative;background:#111111;min-height:280px;overflow:hidden}
+.m-track{display:flex;height:100%;transition:transform .35s ease}
+.m-slide{min-width:100%;height:100%}
+.m-slide img{width:100%;height:100%;object-fit:cover;min-height:280px}
+.m-arrow{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;background:rgba(10,42,84,.72);border:none;color:#fff;cursor:pointer;font-size:1.1rem}
+.m-arrow.prev{left:0}.m-arrow.next{right:0}
+.m-dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px}
+.m-dots button{width:9px;height:9px;border:none;background:rgba(255,255,255,.55);cursor:pointer;padding:0}
+.m-dots button.on{background:var(--gold)}
+.m-body{padding:26px 26px 30px;max-height:78vh;overflow-y:auto}
+.m-body h2{font-size:1.4rem}
+.m-tags{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 0}
+.m-tags span{background:var(--gold-pale);padding:5px 10px;font-size:.78rem;font-weight:600;color:var(--gold-deep)}
+.m-price{font-size:1.75rem;font-weight:700;color:var(--gold-deep);margin-top:14px}
+.m-fees{font-size:.82rem;color:var(--muted)}
+.m-specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:0;border:1px solid var(--line);margin-top:16px}
+.m-specs div{padding:12px;text-align:center;border-right:1px solid var(--line)}
+.m-specs div:last-child{border-right:none}
+.m-specs b{display:block;color:var(--ink);font-size:1.1rem}
+.m-specs span{font-size:.74rem;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+.m-desc{color:var(--muted);margin-top:16px;font-size:.95rem}
+.dpe{margin-top:18px}
+.dpe h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:7px}
+.dpe-scale{display:flex;gap:3px}
+.dpe-scale i{flex:1;text-align:center;padding:6px 0;font-style:normal;font-size:.74rem;font-weight:700;color:rgba(255,255,255,.8);opacity:.35}
+.dpe-scale i.on{opacity:1;color:#fff;outline:2px solid var(--gold-deep)}
+.dA{background:#2f9e44}.dB{background:#67b32b}.dC{background:#a7c40f}.dD{background:#f2c00a}.dE{background:#f59f00}.dF{background:#e8590c}.dG{background:#d9480f}
+.m-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+
+/* ---------- Responsive ---------- */
+@media(min-width:1024px){.brand-txt{display:flex}}
+@media(max-width:1023px){
+  .mainnav{
+    display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);
+    border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:8px 0;box-shadow:var(--shadow-lg)
+  }
+  .mainnav.open{display:flex}
+  .mainnav a{padding:13px 20px;border-bottom:1px solid var(--line);border-left:3px solid transparent}
+  .mainnav a:hover,.mainnav a.on{border-bottom-color:var(--line);border-left-color:var(--gold)}
+  .burger{display:inline-block;margin-left:auto}
+  .header .container{position:relative;height:78px}
+  .header .btn{display:none}
+  .sb-grid{grid-template-columns:1fr 1fr}
+  .trust,.grid-biens,.grid-news,.advice,.grid-quotes{grid-template-columns:1fr 1fr}
+  .trust-item{border-right:none;border-bottom:1px solid var(--line)}
+  .cols2,.contact,.agency{grid-template-columns:1fr}
+  .m-grid{grid-template-columns:1fr}
+  .kpis,.tl{grid-template-columns:1fr 1fr}
+  .kpi,.tl-i{border-bottom:1px solid var(--line)}
+  .f-cols{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  html{scroll-padding-top:120px}
+  .utility .u-left .hide-xs{display:none}
+  .sb-grid,.grid-biens,.grid-news,.advice,.grid-quotes,.trust,.form-grid,.sim-row,.f-cols{grid-template-columns:1fr}
+  .sb-tab{padding:12px 16px;font-size:.88rem}
+  .kpis,.tl{grid-template-columns:1fr}
+  .hero .container{padding-top:36px;padding-bottom:40px}
+}
+
+
+/* ============================================================
+   NAVIGATION PAR ONGLETS
+   ============================================================ */
+
+/* Masquer toutes les sections sauf l'active */
+.page { display: none; }
+.page.active { display: block; }
+
+/* Barre d'onglets principale */
+.tabnav {
+  background: var(--dark-900);
+  border-bottom: 2px solid var(--gold);
+  position: sticky;
+  top: 38px; /* sous le bandeau utilitaire */
+  z-index: 50;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.tabnav::-webkit-scrollbar { display: none; }
+.tabnav .container {
+  display: flex;
+  align-items: stretch;
+  min-width: max-content;
+  gap: 0;
+}
+.tabnav-logo {
+  background: #000;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  border-right: 1px solid rgba(201,168,76,.3);
+}
+.tabnav-logo img { height: 44px; width: auto; object-fit: contain; }
+.tabnav-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px 0 14px;
+  border-right: 1px solid rgba(201,168,76,.2);
+  line-height: 1.2;
+}
+.tabnav-brand b { color: var(--gold); font-size: .9rem; }
+.tabnav-brand span { color: rgba(201,168,76,.6); font-size: .75rem; }
+.tab-btn {
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: rgba(201,168,76,.7);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: .88rem;
+  font-weight: 600;
+  padding: 0 18px;
+  height: 52px;
+  white-space: nowrap;
+  transition: color .15s, border-color .15s, background .15s;
+  position: relative;
+}
+.tab-btn:hover {
+  color: var(--gold-light);
+  background: rgba(201,168,76,.06);
+}
+.tab-btn.on {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+  background: rgba(201,168,76,.10);
+}
+.tabnav-cta {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-left: 1px solid rgba(201,168,76,.2);
+  flex: 0 0 auto;
+}
+.tabnav-cta a {
+  background: var(--gold);
+  color: var(--dark-900);
+  font-weight: 700;
+  font-size: .82rem;
+  padding: 8px 14px;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background .15s;
+}
+.tabnav-cta a:hover { background: var(--gold-light); color: var(--dark-900); }
+
+/* Supprimer l'ancien header sticky */
+.header { display: none; }
+
+/* Adapter le scroll-padding au tabnav (38px utility + 52px tabnav) */
+html { scroll-padding-top: 90px; }
+
+/* Sur mobile : cacher la marque et le CTA */
+@media (max-width: 860px) {
+  .tabnav { top: 0; }
+  .utility { display: none; }
+  .tabnav-brand { display: none; }
+  .tabnav-cta { display: none; }
+  html { scroll-padding-top: 52px; }
+  .tab-btn { padding: 0 13px; font-size: .82rem; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ============ BANDEAU UTILITAIRE ============ -->
+<div class="utility">
+  <div class="container">
+    <div class="u-left">
+      <a href="tel:+33668500769">📞 06 68 50 07 69</a>
+      <span class="sep hide-xs"></span>
+      <a class="hide-xs" href="mailto:laurent.duchesne@lideal-immo.fr">✉️ laurent.duchesne@lideal-immo.fr</a>
+    </div>
+    <div class="u-right">
+      <a class="hide-xs" data-goto="honoraires" href="#">Honoraires</a>
+      <span class="sep hide-xs"></span>
+      <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer">Facebook</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ BARRE D'ONGLETS PRINCIPALE ============ -->
+<nav class="tabnav" role="tablist" aria-label="Navigation principale">
+  <div class="container">
+    <a class="tabnav-logo" href="#" data-goto="accueil" aria-label="L'IDEAL IMMO — Accueil">
+      <img id="logoHeader" alt="L'IDEAL IMMO" />
+    </a>
+    <div class="tabnav-brand">
+      <b>L'IDEAL IMMO</b>
+      <span>Laurent Duchesne · Bordeaux</span>
+    </div>
+    <button class="tab-btn on" data-tab="accueil" role="tab" aria-selected="true">Accueil</button>
+    <button class="tab-btn" data-tab="biens" role="tab" aria-selected="false">Nos biens</button>
+    <button class="tab-btn" data-tab="acheter" role="tab" aria-selected="false">Acheter</button>
+    <button class="tab-btn" data-tab="vendre" role="tab" aria-selected="false">Vendre</button>
+    <button class="tab-btn" data-tab="honoraires" role="tab" aria-selected="false">Honoraires</button>
+    <button class="tab-btn" data-tab="actualites" role="tab" aria-selected="false">Actualités</button>
+    <button class="tab-btn" data-tab="agence" role="tab" aria-selected="false">L'agence</button>
+    <button class="tab-btn" data-tab="contact" role="tab" aria-selected="false">Contact</button>
+    <div class="tabnav-cta"><a href="#" data-goto="contact">Estimation offerte</a></div>
+  </div>
+</nav>
+
+<!-- ================================================================
+     PAGE ACCUEIL
+     ================================================================ -->
+<div class="page active" id="page-accueil">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Trouvez le bien qui vous ressemble,<br><em>vendez au juste prix</em></h1>
+      <p class="lead">Agence indépendante à Bordeaux et en Gironde. Un seul interlocuteur, du premier rendez-vous à la remise des clés.</p>
+
+      <div class="searchbox">
+        <div class="sb-tabs">
+          <button class="sb-tab on" data-sb="acheter">Acheter</button>
+          <button class="sb-tab" data-sb="vendre">Vendre / Estimer</button>
+          <button class="sb-tab" data-sb="pro">Commerce &amp; entreprise</button>
+        </div>
+        <div class="sb-body">
+          <div class="sb-pane on" id="pane-acheter">
+            <div class="sb-grid">
+              <div class="fld"><label for="fCity">Dans quelle commune ?</label><select id="fCity"></select></div>
+              <div class="fld"><label for="fBudget">Budget maximum</label><select id="fBudget"></select></div>
+              <div class="fld"><label for="fType">Type de bien</label><select id="fType"></select></div>
+              <div class="fld"><label for="fRooms">Pièce(s) min.</label><select id="fRooms"></select></div>
+              <div class="fld"><button class="btn" id="btnSearch" style="width:100%">🔎 Rechercher</button></div>
+            </div>
+            <p class="sb-note">Un bien ne correspond pas à votre recherche ? <a href="#" data-goto="contact">Créez votre alerte personnalisée</a> et soyez prévenu en priorité.</p>
+          </div>
+          <div class="sb-pane" id="pane-vendre">
+            <div class="sb-grid" style="grid-template-columns:1.4fr 1fr 1fr auto">
+              <div class="fld"><label for="qCity">Où se situe votre bien ?</label><input id="qCity" placeholder="Ex. Bordeaux Caudéran" /></div>
+              <div class="fld"><label for="qType">Type de bien</label><select id="qType"><option>Maison</option><option>Appartement ancien</option><option>Appartement neuf</option><option>Terrain</option><option>Local commercial</option></select></div>
+              <div class="fld"><label for="qSurface">Surface (m²)</label><input id="qSurface" type="number" min="0" placeholder="Ex. 95" /></div>
+              <div class="fld"><button class="btn" id="btnQuickEst" style="width:100%">📈 Faire estimer</button></div>
+            </div>
+            <p class="sb-note">Estimation offerte et sans engagement, réponse sous 48 h ouvrées.</p>
+          </div>
+          <div class="sb-pane" id="pane-pro">
+            <div class="sb-grid" style="grid-template-columns:1.4fr 1fr auto">
+              <div class="fld"><label for="pCity">Localisation</label><input id="pCity" placeholder="Ex. Talence, Bordeaux centre…" /></div>
+              <div class="fld"><label for="pAct">Nature d'activité</label><select id="pAct"><option>Local commercial</option><option>Bureaux</option><option>Fonds de commerce</option><option>Local industriel</option><option>Immeuble de rapport</option></select></div>
+              <div class="fld"><button class="btn" id="btnPro" style="width:100%">✉️ Être rappelé</button></div>
+            </div>
+            <p class="sb-note">Cession de commerce, murs, bureaux : décrivez votre projet, je vous rappelle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bandeau confiance -->
+  <section class="section tight">
+    <div class="container"><div class="trust" id="trust"></div></div>
+  </section>
+
+  <!-- Sélection de biens en avant-première -->
+  <section class="section alt">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">Sélection <span class="thin">— biens à la une</span></h2>
+        <div class="sec-rule"></div>
+        <p>Nos exclusivités et coups de cœur du moment.</p>
+      </div>
+      <div class="grid-biens" id="gridFeatured"></div>
+      <div class="center-cta" style="margin-top:24px">
+        <button class="btn" data-goto="biens">Voir tous nos biens →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conseils -->
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">Nos conseils <span class="thin">pour accompagner votre projet</span></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="advice">
+        <div class="advice-col">
+          <h3>Achat &amp; vente</h3>
+          <ul>
+            <li><a href="#" data-goto="vendre">Pourquoi faire estimer son bien par un professionnel</a></li>
+            <li><a href="#" data-goto="vendre">Vendre son bien : constituer d'abord son dossier</a></li>
+            <li><a href="#" data-goto="honoraires">Mandat de vente : que faut-il savoir ?</a></li>
+            <li><a href="#" data-goto="acheter">Les 5 étapes d'un achat immobilier</a></li>
+            <li><a href="#" data-goto="acheter">Frais de notaire dans l'ancien : que recouvrent-ils ?</a></li>
+          </ul>
+        </div>
+        <div class="advice-col">
+          <h3>Financement</h3>
+          <ul>
+            <li><a href="#" data-goto="acheter">Calculer sa mensualité et sa capacité d'emprunt</a></li>
+            <li><a href="#" data-goto="acheter">Les documents à préparer pour la banque</a></li>
+            <li><a href="#" data-goto="acheter">Condition suspensive d'obtention de prêt</a></li>
+            <li><a href="#" data-goto="acheter">Acheter avant de vendre : le prêt relais</a></li>
+            <li><a href="#" data-goto="contact">Être mis en relation avec un courtier</a></li>
+          </ul>
+        </div>
+        <div class="advice-col">
+          <h3>Diagnostics &amp; énergie</h3>
+          <ul>
+            <li><a href="#" data-goto="actualites">Le DPE, un critère devenu décisif</a></li>
+            <li><a href="#" data-goto="actualites">Diagnostics immobiliers obligatoires</a></li>
+            <li><a href="#" data-goto="actualites">Rénovation énergétique : quels travaux utiles ?</a></li>
+            <li><a href="#" data-goto="actualites">Loi Carrez : calcul de la superficie</a></li>
+            <li><a href="#" data-goto="contact">Poser une question sur mon bien</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Actualités (aperçu) -->
+  <section class="section alt">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">Actualité <span class="thin">du marché</span></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="grid-news" id="gridNewsHome"></div>
+      <div class="center-cta" style="margin-top:24px">
+        <button class="btn btn-outline" data-goto="actualites">Toutes les actualités →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <!-- Pied de page commun -->
+  <footer class="footer">
+    <div class="container">
+      <div class="f-top">
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+        </div>
+        <div class="f-social">
+          <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
+          <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+      </div>
+      <div class="f-cols">
+        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
+        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
+        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
+        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
+      </div>
+      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
+        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
+      </div>
+      <div class="f-legal">
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ================================================================
+     PAGE NOS BIENS
+     ================================================================ -->
+<div class="page" id="page-biens">
+  <section class="section alt" style="padding-top:32px">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">Nos biens <span class="thin">à vendre</span></h2>
+        <div class="sec-rule"></div>
+        <p>Maisons, appartements anciens et neufs, terrains et locaux commerciaux à Bordeaux et dans toute la Gironde.</p>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--line);padding:20px;margin-bottom:22px">
+        <div class="sb-grid" style="grid-template-columns:1.4fr 1fr 1fr 1fr auto">
+          <div class="fld"><label for="fCity2">Commune</label><select id="fCity2"></select></div>
+          <div class="fld"><label for="fBudget2">Budget maximum</label><select id="fBudget2"></select></div>
+          <div class="fld"><label for="fType2">Type de bien</label><select id="fType2"></select></div>
+          <div class="fld"><label for="fRooms2">Pièces min.</label><select id="fRooms2"></select></div>
+          <div class="fld"><button class="btn" id="btnSearch2" style="width:100%">🔎 Filtrer</button></div>
+        </div>
+      </div>
+      <div class="results-bar">
+        <div class="count" id="resCount"></div>
+        <div class="chipline">
+          <button class="chip on" data-f="tous">Tous</button>
+          <button class="chip" data-f="coup">⭐ Coups de cœur</button>
+          <button class="chip" data-f="exclu">Exclusivités</button>
+          <button class="chip" data-f="dispo">Disponibles</button>
+          <button class="chip" id="chipReset" style="border-style:dashed">Réinitialiser</button>
+        </div>
+      </div>
+      <div class="grid-biens" id="gridBiens"></div>
+      <div class="center-cta"><button class="btn btn-outline" id="btnMore">Voir plus de biens</button></div>
+    </div>
+  </section>
+  <!-- Pied de page commun -->
+  <footer class="footer">
+    <div class="container">
+      <div class="f-top">
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+        </div>
+        <div class="f-social">
+          <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
+          <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+      </div>
+      <div class="f-cols">
+        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
+        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
+        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
+        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
+      </div>
+      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
+        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
+      </div>
+      <div class="f-legal">
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ================================================================
+     PAGE ACHETER
+     ================================================================ -->
+<div class="page" id="page-acheter">
+  <section class="section" style="padding-top:36px">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">Acheter <span class="thin">en toute sérénité</span></h2>
+        <div class="sec-rule"></div>
+        <p>Cinq étapes, du premier rendez-vous à la remise des clés.</p>
+      </div>
+      <div class="trust" id="stepsGrid" style="grid-template-columns:repeat(5,1fr)"></div>
+
+      <div class="cols2" style="margin-top:38px">
+        <div class="panelbox">
+          <div class="pb-head">🧮 Simulateur de mensualité</div>
+          <div class="pb-body">
+            <div class="fld" style="margin-bottom:14px"><label for="simPrice">Prix du bien (€)</label><input type="number" id="simPrice" value="280000" step="1000" min="0" /></div>
+            <div class="fld" style="margin-bottom:14px"><label for="simApport">Apport personnel (€)</label><input type="number" id="simApport" value="30000" step="1000" min="0" /></div>
+            <div class="sim-row">
+              <div class="fld"><label for="simRate">Taux annuel (%)</label><input type="number" id="simRate" value="3.4" step="0.05" min="0" /></div>
+              <div class="fld"><label for="simYears">Durée (années)</label><input type="number" id="simYears" value="20" step="1" min="1" max="30" /></div>
+            </div>
+            <div class="fld" style="margin-top:14px"><label for="simNotaire">Type d'achat</label>
+              <select id="simNotaire"><option value="0.075">Ancien — frais de notaire ≈ 7,5 %</option><option value="0.025">Neuf — frais de notaire ≈ 2,5 %</option></select>
+            </div>
+            <div class="sim-res">
+              <div class="big"><span id="simMonthly">— €</span><small>Mensualité estimée, hors assurance</small></div>
+              <ul>
+                <li><span>Montant emprunté</span><b id="simLoan">—</b></li>
+                <li><span>Coût total des intérêts</span><b id="simInterest">—</b></li>
+                <li><span>Frais de notaire estimés</span><b id="simFees">—</b></li>
+              </ul>
+            </div>
+            <p class="legal">Simulation indicative, hors assurance emprunteur, frais de dossier et garanties. Elle ne constitue ni une offre de prêt ni un conseil en financement.</p>
+          </div>
+        </div>
+        <div class="panelbox">
+          <div class="pb-head">✅ Votre dossier acquéreur</div>
+          <div class="pb-body">
+            <table class="tbl"><tbody>
+              <tr><td>Pièce d'identité et justificatif de domicile</td><td>Obligatoire</td></tr>
+              <tr><td>Trois derniers bulletins de salaire</td><td>Obligatoire</td></tr>
+              <tr><td>Dernier avis d'imposition</td><td>Obligatoire</td></tr>
+              <tr><td>Justificatif d'apport personnel</td><td>Obligatoire</td></tr>
+              <tr><td>Attestation de financement bancaire</td><td>Recommandé</td></tr>
+              <tr><td>Tableau d'amortissement des crédits en cours</td><td>Si concerné</td></tr>
+            </tbody></table>
+            <p class="legal">Un dossier complet rend votre offre nettement plus crédible face au vendeur, et raccourcit les délais chez le notaire.</p>
+            <button class="btn btn-outline" data-goto="contact" style="margin-top:8px">Créer mon alerte personnalisée</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pied de page commun -->
+  <footer class="footer">
+    <div class="container">
+      <div class="f-top">
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+        </div>
+        <div class="f-social">
+          <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
+          <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+      </div>
+      <div class="f-cols">
+        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
+        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
+        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
+        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
+      </div>
+      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
+        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
+      </div>
+      <div class="f-legal">
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ================================================================
+     PAGE VENDRE
+     ================================================================ -->
+<div class="page" id="page-vendre">
+  <section class="section" style="padding-top:36px">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">Vendre <span class="thin">: de l'estimation à la signature</span></h2>
+        <div class="sec-rule"></div>
+        <p>Six étapes maîtrisées, un seul interlocuteur pour les mener toutes.</p>
+      </div>
+      <div class="grid-biens" id="missionGrid"></div>
+
+      <div class="cta-band" style="margin-top:38px">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:26px;padding:34px;flex-wrap:wrap">
+          <div>
+            <h2 style="color:var(--gold)">L'estimation est offerte.</h2>
+            <p style="color:#c9b988;margin:6px 0 0">Une évaluation argumentée, fondée sur les ventes réellement signées dans votre quartier. Sans engagement.</p>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <button class="btn" data-goto="contact">📈 Demander mon estimation</button>
+            <a class="btn btn-dark" href="tel:+33668500769">📞 06 68 50 07 69</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pied de page commun -->
+  <footer class="footer">
+    <div class="container">
+      <div class="f-top">
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+        </div>
+        <div class="f-social">
+          <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
+          <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+      </div>
+      <div class="f-cols">
+        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
+        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
+        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
+        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
+      </div>
+      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
+        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
+      </div>
+      <div class="f-legal">
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ================================================================
+     PAGE HONORAIRES
+     ================================================================ -->
+<div class="page" id="page-honoraires">
+  <section class="section" style="padding-top:36px">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">Honoraires <span class="thin">d'agence</span></h2>
+        <div class="sec-rule"></div>
+        <p>Honoraires à la charge du vendeur sauf mention contraire dans l'annonce, TVA incluse, et dus uniquement en cas de vente effective.</p>
+      </div>
+      <div class="cols2">
+        <div class="panelbox">
+          <div class="pb-head">Barème en vigueur</div>
+          <div class="pb-body">
+            <table class="tbl"><thead><tr><th>Prix de vente du bien</th><th>Honoraires TTC</th></tr></thead><tbody id="feesBody"></tbody></table>
+            <p class="legal">Barème indicatif à remplacer par votre barème officiel, affiché en vitrine et sur vos supports, conformément à l'arrêté du 10 janvier 2017.</p>
+          </div>
+        </div>
+        <div class="panelbox">
+          <div class="pb-head">Ce qui est compris</div>
+          <div class="pb-body">
+            <table class="tbl"><tbody>
+              <tr><td>Estimation argumentée du bien</td><td>Inclus</td></tr>
+              <tr><td>Reportage photo professionnel</td><td>Inclus</td></tr>
+              <tr><td>Rédaction et diffusion de l'annonce</td><td>Inclus</td></tr>
+              <tr><td>Organisation et suivi des visites</td><td>Inclus</td></tr>
+              <tr><td>Négociation et rédaction de l'offre</td><td>Inclus</td></tr>
+              <tr><td>Suivi jusqu'à l'acte authentique</td><td>Inclus</td></tr>
+            </tbody></table>
+            <p class="legal">Aucun versement ne peut être exigé avant la conclusion effective de la vente.</p>
+            <div id="feesImgWrap" style="margin-top:12px;border:1px solid var(--line);cursor:zoom-in">
+              <img id="feesImg" alt="Barème des honoraires L'IDEAL IMMO" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pied de page commun -->
+  <footer class="footer">
+    <div class="container">
+      <div class="f-top">
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+        </div>
+        <div class="f-social">
+          <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
+          <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+      </div>
+      <div class="f-cols">
+        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
+        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
+        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
+        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
+      </div>
+      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
+        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
+      </div>
+      <div class="f-legal">
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ================================================================
+     PAGE ACTUALITÉS
+     ================================================================ -->
+<div class="page" id="page-actualites">
+  <section class="section" style="padding-top:36px">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">Actualité <span class="thin">du marché de l'immobilier</span></h2>
+        <div class="sec-rule"></div>
+        <p>Tendances de prix, fiscalité, diagnostics, conseils de vente : l'essentiel expliqué simplement.</p>
+      </div>
+      <div class="grid-news" id="gridNews"></div>
+    </div>
+  </section>
+  <!-- Pied de page commun -->
+  <footer class="footer">
+    <div class="container">
+      <div class="f-top">
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+        </div>
+        <div class="f-social">
+          <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
+          <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+      </div>
+      <div class="f-cols">
+        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
+        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
+        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
+        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
+      </div>
+      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
+        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
+      </div>
+      <div class="f-legal">
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ================================================================
+     PAGE L'AGENCE
+     ================================================================ -->
+<div class="page" id="page-agence">
+  <section class="section" style="padding-top:36px">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="sec-title">L'agence <span class="thin">— Laurent Duchesne</span></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="agency">
+        <div class="portrait"><img id="portrait" alt="Laurent Duchesne, fondateur de L'IDEAL IMMO" /></div>
+        <div>
+          <p>À 52 ans, j'ai décidé de reprendre mes études pour atteindre ma position actuelle. J'ai fondé ma propre agence immobilière après avoir obtenu une licence en gestion des affaires immobilières.</p>
+          <p>Ce qui me motive profondément, c'est l'essence même de ce métier : la satisfaction du client. Pouvoir répondre à ses besoins et contribuer à la concrétisation de son projet de vie est ce qui me passionne le plus.</p>
+          <p>Pas de standard ni de dossier transféré d'un service à l'autre : vous échangez directement avec la personne qui suit votre affaire, du premier appel à la remise des clés.</p>
+          <div class="kpis" id="kpis"></div>
+          <div class="tl" id="tl"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="sec-head center">
+        <h2 class="sec-title">Ils m'ont <span class="thin">fait confiance</span></h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="grid-quotes" id="gridQuotes"></div>
+    </div>
+  </section>
+  <!-- Pied de page commun -->
+  <footer class="footer">
+    <div class="container">
+      <div class="f-top">
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+        </div>
+        <div class="f-social">
+          <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
+          <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+      </div>
+      <div class="f-cols">
+        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
+        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
+        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
+        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
+      </div>
+      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
+        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
+      </div>
+      <div class="f-legal">
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ================================================================
+     PAGE CONTACT
+     ================================================================ -->
+<div class="page" id="page-contact">
+  <section class="section" style="padding-top:36px">
+    <div class="container">
+      <div class="sec-head" id="estimation">
+        <h2 class="sec-title">Demander <span class="thin">une estimation ou un rendez-vous</span></h2>
+        <div class="sec-rule"></div>
+        <p>Remplissez ce formulaire : votre messagerie s'ouvrira avec le récapitulatif prêt à être envoyé.</p>
+      </div>
+      <div class="contact">
+        <div class="panelbox">
+          <div class="pb-head">Votre demande</div>
+          <div class="pb-body">
+            <div class="form-grid">
+              <div class="fld"><label for="estName">Nom et prénom *</label><input id="estName" placeholder="Ex. Marie Dupont" /></div>
+              <div class="fld"><label for="estPhone">Téléphone</label><input id="estPhone" placeholder="06 00 00 00 00" /></div>
+              <div class="fld"><label for="estEmail">Email *</label><input id="estEmail" type="email" placeholder="vous@exemple.fr" /></div>
+              <div class="fld"><label for="estType">Type de bien</label>
+                <select id="estType"><option>Maison</option><option>Appartement ancien</option><option>Appartement neuf</option><option>Terrain</option><option>Local commercial</option></select>
+              </div>
+              <div class="fld"><label for="estCity">Ville / secteur</label><input id="estCity" placeholder="Ex. Bordeaux Caudéran" /></div>
+              <div class="fld"><label for="estSurface">Surface (m²)</label><input id="estSurface" type="number" min="0" placeholder="Ex. 95" /></div>
+              <div class="fld full"><label for="estMsg">Votre projet</label>
+                <textarea id="estMsg" rows="5" placeholder="Nombre de pièces, année de construction, travaux réalisés, délai souhaité…"></textarea>
+              </div>
+              <div class="full">
+                <label class="consent" for="estConsent">
+                  <input type="checkbox" id="estConsent" />
+                  <span>J'accepte que ces informations soient utilisées uniquement pour me recontacter au sujet de mon projet immobilier. Elles ne sont ni cédées ni revendues.</span>
+                </label>
+              </div>
+              <div class="full" style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+                <button class="btn" id="estSubmit" type="button">📨 Envoyer ma demande</button>
+                <span id="estFeedback" style="font-size:.88rem;color:var(--muted)"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="infobox">
+            <div class="ib-row"><span class="ib-ic">📞</span><div><b>06 68 50 07 69</b><span>Du lundi au samedi</span></div></div>
+            <div class="ib-row"><span class="ib-ic">✉️</span><div><b>laurent.duchesne@lideal-immo.fr</b><span>Réponse sous 48 h ouvrées</span></div></div>
+            <div class="ib-row"><span class="ib-ic">📍</span><div><b>Bordeaux</b><span>Gironde, Nouvelle-Aquitaine</span></div></div>
+          </div>
+          <div class="panelbox" style="margin-top:20px">
+            <div class="pb-head">🕐 Disponibilités</div>
+            <div class="pb-body"><table class="hours"><tbody id="hoursBody"></tbody></table></div>
+          </div>
+          <a class="btn btn-dark" href="tel:+33668500769" style="width:100%;margin-top:20px;display:block;text-align:center">📞 Appeler maintenant</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pied de page commun -->
+  <footer class="footer">
+    <div class="container">
+      <div class="f-top">
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+        </div>
+        <div class="f-social">
+          <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
+          <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+      </div>
+      <div class="f-cols">
+        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
+        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
+        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
+        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
+      </div>
+      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
+        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
+      </div>
+      <div class="f-legal">
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ============ MODALE ============ -->
+<div class="backdrop" id="backdrop">
+  <div class="modal">
+    <button class="x" id="modalX" aria-label="Fermer">✕</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   L'IDEAL IMMO — Données du site
+   ------------------------------------------------------------
+   TOUT SE MODIFIE ICI : il suffit d'éditer les tableaux ci-dessous
+   pour mettre à jour le site, sans toucher au reste du code.
+   ============================================================ */
+
+/* ---- 1. IMAGES DU SITE -------------------------------------
+   Les URL ci-dessous pointent vers les images de votre site actuel.
+   Pour un site 100 % autonome, déposez vos fichiers à côté de ce
+   index.html et remplacez simplement les URL par les noms de fichiers,
+   par exemple : const LOGO = 'logo.png';
+   ------------------------------------------------------------ */
+const LOGO      = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/2e87c1be-5ca8-474a-8aa0-430903621f1f/l0,t0,w229,h158/image.png';
+const PORTRAIT  = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/9cb60855-7662-4060-ad8f-b797a1b6b0b9/l0,t0,w290,h377/image.png';
+const FEES_IMG  = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/a5e8a522-e51d-487c-836b-d0245f753664/l3,t0,w877,h491/image.png';
+const IMG_ACHAT = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/afd0e3bb-3164-4f50-a2a7-2e0d9603ee10/l0,t0,w1920,h1280/image.jpg';
+const IMG_EXPER = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/416c105d-a3f4-4614-a7b8-8a7371e5a896/l4,t3,w1913,h1274/image.jpg';
+const IMG_VENTE = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/35a7cb4f-cf1a-46f7-b875-241888cd1ee0/l121,t81,w1678,h1118/image.jpg';
+
+const EMAIL = 'laurent.duchesne@lideal-immo.fr';
+const TEL   = '+33668500769';
+const TEL_AFFICHE = '06 68 50 07 69';
+
+/* ---- 2. LES BIENS ------------------------------------------
+   type     : 'Maison' | 'Appartement ancien' | 'Appartement neuf' | 'Terrain' | 'Local commercial'
+   status   : 'disponible' | 'compromis' | 'vendu'
+   featured : true pour afficher le bien en « coup de cœur »
+   exclusive: true pour le badge « Exclusivité »
+   dpe/ges  : lettre de A à G, ou '' si non soumis au DPE (terrain par ex.)
+   photos   : chemins vers vos photos, ex. 'BIENS/ref-1024/photo1.jpg'
+              (une image d'attente s'affiche automatiquement si le
+               fichier n'existe pas encore)
+   ------------------------------------------------------------ */
+const biens = [
+  {ref:'LI-1042', type:'Maison', title:'Maison familiale avec jardin', city:'Mérignac', price:489000, surface:142, land:620, rooms:6, bedrooms:4, dpe:'C', ges:'B',
+   status:'disponible', featured:true, exclusive:true, fees:'Honoraires 4 % TTC à la charge du vendeur',
+   photos:['BIENS/LI-1042/photo1.jpg','BIENS/LI-1042/photo2.jpg','BIENS/LI-1042/photo3.jpg'],
+   desc:"Belle maison familiale de 142 m² édifiée sur un terrain clos et arboré de 620 m².<Br><Br>Au rez-de-chaussée : vaste séjour double traversant ouvert sur une terrasse plein sud, cuisine aménagée et équipée, chambre avec salle d'eau attenante.<Br><Br>À l'étage : trois chambres, salle de bains et dressing.<Br><Br>Garage, buanderie et stationnement pour deux véhicules. Chauffage par pompe à chaleur installée en 2022. Proche écoles, tramway et commerces."},
+
+  {ref:'LI-1038', type:'Appartement ancien', title:'T3 pierre avec balcon, quartier Chartrons', city:'Bordeaux', price:395000, surface:74, land:0, rooms:3, bedrooms:2, dpe:'D', ges:'D',
+   status:'disponible', featured:true, exclusive:false, fees:'Honoraires 4,5 % TTC à la charge du vendeur',
+   photos:['BIENS/LI-1038/photo1.jpg','BIENS/LI-1038/photo2.jpg'],
+   desc:"Au 2ᵉ étage d'un immeuble en pierre de taille avec ascenseur, appartement de 74 m² baigné de lumière.<Br><Br>Séjour avec parquet d'origine, moulures et cheminée, cuisine séparée donnant sur un balcon filant, deux chambres, salle de bains et WC séparés.<Br><Br>Cave en sous-sol. Copropriété de 18 lots, charges maîtrisées, aucune procédure en cours.<Br><Br>À deux pas du marché des Chartrons et des quais."},
+
+  {ref:'LI-1051', type:'Appartement neuf', title:'T2 neuf avec terrasse et parking', city:'Bègles', price:249000, surface:46, land:0, rooms:2, bedrooms:1, dpe:'A', ges:'A',
+   status:'disponible', featured:false, exclusive:false, fees:'Honoraires inclus dans le prix de vente',
+   photos:['BIENS/LI-1051/photo1.jpg'],
+   desc:"Programme neuf livré en 2025, dernier T2 disponible au 3ᵉ étage.<Br><Br>Séjour ouvert sur cuisine équipée, prolongé par une terrasse de 11 m² exposée sud-ouest, une chambre avec placard, salle d'eau contemporaine.<Br><Br>Normes RE2020, menuiseries double vitrage, VMC double flux. Place de parking en sous-sol incluse.<Br><Br>Éligible aux dispositifs de défiscalisation en vigueur — frais de notaire réduits."},
+
+  {ref:'LI-1029', type:'Maison', title:'Échoppe rénovée avec patio', city:'Bordeaux', price:562000, surface:118, land:180, rooms:5, bedrooms:3, dpe:'C', ges:'C',
+   status:'compromis', featured:false, exclusive:false, fees:'Honoraires 4 % TTC à la charge du vendeur',
+   photos:['BIENS/LI-1029/photo1.jpg','BIENS/LI-1029/photo2.jpg'],
+   desc:"Échoppe bordelaise entièrement rénovée en 2021, alliant cachet ancien et prestations contemporaines.<Br><Br>Pierre apparente, tomettes restaurées, cuisine ouverte sur un patio paysager de 40 m², trois chambres dont une suite parentale.<Br><Br>Isolation refaite, électricité et plomberie aux normes."},
+
+  {ref:'LI-1047', type:'Terrain', title:'Terrain constructible viabilisé', city:'Saint-Médard-en-Jalles', price:178000, surface:0, land:540, rooms:0, bedrooms:0, dpe:'', ges:'',
+   status:'disponible', featured:false, exclusive:true, fees:'Honoraires 6 % TTC à la charge du vendeur',
+   photos:['BIENS/LI-1047/photo1.jpg'],
+   desc:"Terrain plat de 540 m², libre de constructeur, entièrement viabilisé (eau, électricité, tout-à-l'égout, fibre en limite).<Br><Br>Façade de 18 m, exposition sud, hors zone inondable.<Br><Br>Certificat d'urbanisme opérationnel disponible sur demande."},
+
+  {ref:'LI-1033', type:'Local commercial', title:'Local commercial pied d\'immeuble', city:'Talence', price:215000, surface:88, land:0, rooms:3, bedrooms:0, dpe:'E', ges:'D',
+   status:'disponible', featured:false, exclusive:false, fees:'Honoraires 6 % TTC à la charge du vendeur',
+   photos:['BIENS/LI-1033/photo1.jpg'],
+   desc:"Local commercial de 88 m² en pied d'immeuble, sur artère passante à proximité immédiate du campus.<Br><Br>Grande vitrine de 6 m, espace de vente de 62 m², réserve, bureau et sanitaires.<Br><Br>Actuellement loué — rentabilité brute intéressante, idéal pour un investisseur. Bail et bilan communiqués sur demande."},
+
+  {ref:'LI-1055', type:'Appartement ancien', title:'T4 lumineux avec vue dégagée', city:'Pessac', price:312000, surface:88, land:0, rooms:4, bedrooms:3, dpe:'D', ges:'C',
+   status:'disponible', featured:true, exclusive:false, fees:'Honoraires 4,5 % TTC à la charge du vendeur',
+   photos:['BIENS/LI-1055/photo1.jpg','BIENS/LI-1055/photo2.jpg'],
+   desc:"Au 4ᵉ et dernier étage avec ascenseur, appartement traversant de 88 m² offrant une vue dégagée sur les arbres.<Br><Br>Double séjour avec loggia, trois chambres, cuisine indépendante, salle de bains et WC séparés.<Br><Br>Cave et place de stationnement privative. Résidence calme et bien entretenue, proche tram B."},
+
+  {ref:'LI-1018', type:'Maison', title:'Maison de plain-pied avec piscine', city:'Gradignan', price:645000, surface:165, land:1100, rooms:7, bedrooms:4, dpe:'B', ges:'A',
+   status:'vendu', featured:false, exclusive:false, fees:'Honoraires 4 % TTC à la charge du vendeur',
+   photos:['BIENS/LI-1018/photo1.jpg'],
+   desc:"Vendu en 21 jours. Maison contemporaine de plain-pied de 165 m² sur un terrain paysager de 1 100 m² avec piscine chauffée.<Br><Br>Un bien similaire à vendre ? Contactez-moi pour une estimation offerte."}
+];
+
+/* ---- 3. MES SERVICES (accueil) ---- */
+const services = [
+  {img:IMG_ACHAT, icon:'🔑', title:'Vous voulez acheter ?', tab:'biens',
+   text:"Que vous rêviez d'une maison familiale, d'un appartement ou d'un investissement, je vous guide à chaque étape. Avec une connaissance approfondie du marché et une écoute attentive, je m'engage à trouver le bien qui correspond parfaitement à vos attentes."},
+  {img:IMG_EXPER, icon:'📊', title:'Une expertise ?', tab:'vendre',
+   text:"Vous souhaitez connaître la véritable valeur de votre bien ? Grâce à mon expertise en évaluation, je vous propose une estimation précise et objective, basée sur une analyse approfondie du marché et des caractéristiques de votre propriété."},
+  {img:IMG_VENTE, icon:'🤝', title:'Vous voulez vendre ?', tab:'vendre',
+   text:"Confiez-moi cette étape cruciale : je saurai valoriser votre propriété et vous accompagner tout au long du processus, de l'évaluation à la signature finale. Je m'engage à mettre tout en œuvre pour vendre rapidement et au meilleur prix."}
+];
+
+/* ---- 4. VENDRE : formules et services ---- */
+const sellWaysMain = [
+  {icon:'📈', title:'Estimation offerte', text:"Une évaluation précise et argumentée de votre bien, fondée sur les ventes réellement conclues dans votre quartier — sans aucun engagement de votre part.",
+   links:[
+     {label:'📨 Demander mon estimation', href:'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Demande d\'estimation'), cta:true},
+     {label:'📞 ' + TEL_AFFICHE, href:'tel:' + TEL}
+   ]},
+  {icon:'📸', title:'Mise en valeur complète', text:"Reportage photo professionnel, annonce rédigée avec soin, diffusion sur les principaux portails et sur mes réseaux : votre bien mérite une vraie vitrine.",
+   links:[
+     {label:'✉️ En savoir plus', href:'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Mise en valeur de mon bien')}
+   ]}
+];
+
+const sellWaysOther = [
+  {icon:'🗂️', title:'Gestion administrative', text:"Diagnostics, documents de copropriété, urbanisme : je réunis et vérifie l'ensemble des pièces du dossier de vente.", mailSubject:'Gestion administrative de ma vente'},
+  {icon:'👥', title:'Visites qualifiées', text:"Je sélectionne les acquéreurs sérieux et vérifie leur capacité de financement avant toute visite, pour vous éviter les déplacements inutiles.", mailSubject:'Organisation des visites'},
+  {icon:'✍️', title:'Négociation et suivi', text:"Je défends votre prix, formalise l'offre et assure le lien avec le notaire jusqu'à la signature de l'acte authentique.", mailSubject:'Accompagnement à la négociation'}
+];
+
+const whyPoints = [
+  "Un interlocuteur unique, du premier appel à la remise des clés",
+  "Une estimation argumentée, jamais surévaluée pour obtenir un mandat",
+  "Une connaissance fine du marché bordelais et girondin",
+  "Des honoraires clairs, connus dès le départ et dus uniquement en cas de vente"
+];
+
+/* ---- 5. ÉTAPES DE LA VENTE (onglets verticaux) ---- */
+const missions = [
+  {icon:'🔍', title:"Estimation et stratégie", sub:"Fixer le juste prix", text:"Visite du bien, analyse des ventes comparables réellement signées, étude des atouts et des points faibles. Vous repartez avec un avis de valeur écrit et une stratégie de mise en marché."},
+  {icon:'📄', title:"Mandat et diagnostics", sub:"Sécuriser le dossier", text:"Signature du mandat, mise en relation avec un diagnostiqueur, collecte des documents de copropriété et des pièces d'urbanisme. Un dossier complet, c'est une vente qui ne déraille pas."},
+  {icon:'📸', title:"Valorisation et diffusion", sub:"Attirer les bons acquéreurs", text:"Home staging léger si nécessaire, reportage photo soigné, rédaction de l'annonce et diffusion sur les principaux portails, les réseaux sociaux et mon fichier d'acquéreurs."},
+  {icon:'🚪', title:"Visites et retours", sub:"Filtrer et informer", text:"Visites accompagnées uniquement avec des candidats dont le financement a été vérifié, puis compte rendu régulier des retours et ajustement de la stratégie si besoin."},
+  {icon:'🤝', title:"Offre et négociation", sub:"Défendre votre prix", text:"Présentation et analyse des offres, vérification du plan de financement, négociation des conditions et rédaction du dossier de compromis."},
+  {icon:'🗝️', title:"Compromis et signature", sub:"Jusqu'aux clés", text:"Suivi du délai de rétractation, des conditions suspensives et de l'obtention du prêt, coordination avec le notaire, et présence à vos côtés le jour de l'acte authentique."}
+];
+
+/* ---- 6. ÉTAPES DE L'ACHAT (stepper horizontal) ---- */
+const steps = [
+  {no:'01', title:'Définir le projet', text:"On fait le point ensemble : besoins réels, secteurs possibles, budget global, frais annexes et délais. Cette étape évite bien des visites inutiles."},
+  {no:'02', title:'Valider le financement', text:"Avant de visiter, on sécurise votre capacité d'emprunt. Un accord de principe rend votre offre nettement plus crédible face aux vendeurs."},
+  {no:'03', title:'Visiter', text:"Je sélectionne les biens qui correspondent vraiment à vos critères et vous accompagne en visite, avec un regard technique sur l'état du bien et son potentiel."},
+  {no:'04', title:'Faire une offre', text:"Je vous conseille sur le juste prix au regard du marché, rédige votre offre et mène la négociation avec le vendeur."},
+  {no:'05', title:'Signer', text:"Compromis chez le notaire, délai de rétractation de 10 jours, obtention du prêt, puis acte authentique et remise des clés. Je reste présent à chaque échéance."}
+];
+
+/* ---- 7. ACTUALITÉS ET CONSEILS ---- */
+const news = [
+  {id:'4', tag:'📊 Marché', urgent:false, date:'10 septembre 2026', title:'Marché bordelais : où en sont les prix ?',
+   excerpt:"Après deux années d'ajustement, les prix se stabilisent sur l'agglomération. Décryptage secteur par secteur.",
+   photo:IMG_EXPER,
+   full:"Après deux années d'ajustement, le marché de l'agglomération bordelaise retrouve un équilibre.<Br><Br>Les biens correctement estimés dès leur mise en vente trouvent preneur en quelques semaines, tandis que les biens surévalués restent parfois plusieurs mois en ligne avant une baisse de prix souvent supérieure à ce qu'aurait coûté une estimation juste au départ.<Br><Br>Trois enseignements pour les vendeurs :<Br>• Le prix de mise en vente reste le premier levier de réussite.<Br>• Les acquéreurs sont attentifs à la performance énergétique : un bon DPE se négocie moins.<Br>• Un dossier de vente complet dès le départ raccourcit nettement les délais.<Br><Br>Vous souhaitez savoir où se situe votre bien ? L'estimation est offerte et sans engagement."},
+
+  {id:'3', tag:'💡 Conseil', urgent:false, date:'28 août 2026', title:'Vendre : les 7 documents à réunir avant la mise en vente',
+   excerpt:"Un dossier complet dès le premier jour, c'est une vente plus rapide et un compromis sans mauvaise surprise.",
+   photo:IMG_VENTE,
+   full:"Préparer son dossier en amont fait gagner plusieurs semaines sur l'ensemble du processus.<Br><Br>1. Le titre de propriété.<Br>2. Le dossier de diagnostics techniques (DPE, amiante, plomb, électricité, gaz, termites selon les cas).<Br>3. Le dernier avis de taxe foncière.<Br>4. Pour un bien en copropriété : les trois derniers procès-verbaux d'assemblée générale, le règlement de copropriété et l'état daté.<Br>5. Les factures des travaux réalisés et les garanties décennales en cours.<Br>6. Les justificatifs d'urbanisme en cas d'extension ou de modification.<Br>7. Le carnet d'entretien de la chaudière ou de la pompe à chaleur.<Br><Br>Je vous accompagne dans la collecte et la vérification de l'ensemble de ces pièces."},
+
+  {id:'2', tag:'🔑 Achat', urgent:false, date:'12 août 2026', title:'Frais de notaire : ancien, neuf, quelle différence ?',
+   excerpt:"Environ 7 à 8 % dans l'ancien, 2 à 3 % dans le neuf : ce que recouvrent réellement ces frais.",
+   photo:IMG_ACHAT,
+   full:"Les « frais de notaire » portent mal leur nom : l'essentiel de la somme correspond à des taxes reversées à l'État et aux collectivités, et non à la rémunération du notaire.<Br><Br>Dans l'ancien, comptez en général 7 à 8 % du prix de vente. Dans le neuf ou en VEFA, ils tombent à 2 à 3 %, car les droits de mutation y sont réduits.<Br><Br>À prévoir en plus : les frais de garantie du prêt, les frais de dossier bancaires et, le cas échéant, les honoraires de courtage.<Br><Br>Le simulateur disponible dans l'onglet « Acheter » vous donne un premier ordre de grandeur."},
+
+  {id:'1', tag:'🌿 DPE', urgent:false, date:'3 juillet 2026', title:'Performance énergétique : un critère devenu décisif',
+   excerpt:"Le DPE pèse désormais lourd dans la négociation. Quelques travaux ciblés peuvent changer la donne.",
+   photo:IMG_EXPER,
+   full:"Le diagnostic de performance énergétique est devenu l'un des premiers filtres utilisés par les acquéreurs dans leur recherche.<Br><Br>Un logement classé F ou G se négocie plus difficilement et fait l'objet de restrictions croissantes à la location.<Br><Br>Avant de vendre, quelques interventions ciblées — isolation des combles, remplacement d'un système de chauffage vétuste, traitement des ponts thermiques — permettent parfois de gagner une lettre entière et de préserver votre prix.<Br><Br>Parlons-en avant la mise en vente : ces travaux ne sont rentables que s'ils sont bien choisis."}
+];
+
+/* ---- 8. TÉMOIGNAGES CLIENTS ---- */
+const testimonials = [
+  {id:'t3', name:'Sophie et Marc', role:'Vendeurs — Mérignac',
+   excerpt:"Une estimation juste dès le départ, et une vente conclue en moins d'un mois...",
+   full:"Une estimation juste dès le départ, et une vente conclue en moins d'un mois.<Br><Br>Nous avions rencontré deux autres agences qui nous annonçaient un prix bien plus élevé. Laurent nous a expliqué, chiffres à l'appui, pourquoi ce prix nous ferait perdre du temps.<Br><Br>Nous l'avons suivi, et nous avons eu trois offres en trois semaines. Un professionnel honnête, c'est rare et précieux."},
+  {id:'t2', name:'Julien D.', role:'Primo-accédant — Bordeaux',
+   excerpt:"C'était mon premier achat et j'avais peur de passer à côté de quelque chose...",
+   full:"C'était mon premier achat et j'avais peur de passer à côté de quelque chose.<Br><Br>Laurent a pris le temps de tout m'expliquer : le compromis, les conditions suspensives, les diagnostics, les délais. Il m'a même déconseillé un bien sur lequel j'avais eu un coup de cœur, en me montrant les travaux que je n'avais pas vus.<Br><Br>J'ai finalement acheté trois semaines plus tard, et je ne regrette rien."},
+  {id:'t1', name:'Famille Rousseau', role:'Vendeurs puis acquéreurs — Pessac',
+   excerpt:"Vendre et racheter en même temps nous semblait impossible à coordonner...",
+   full:"Vendre et racheter en même temps nous semblait impossible à coordonner.<Br><Br>Laurent a géré les deux dossiers de front, calé les dates de signature avec le notaire et trouvé une solution pour la période de transition.<Br><Br>Un seul interlocuteur du début à la fin, joignable même le samedi. Nous le recommandons sans hésiter autour de nous."}
+];
+
+/* ---- 9. AGENDA / PORTES OUVERTES ---- */
+const agenda = [
+  {day:'04', month:'OCT.', title:'Portes ouvertes — Maison LI-1042', place:'Mérignac', time:'10h00 – 13h00'},
+  {day:'18', month:'OCT.', title:'Visites groupées — T3 Chartrons', place:'Bordeaux', time:'14h00 – 17h00'}
+];
+
+/* ---- 10. DISPONIBILITÉS ---- */
+const hours = [
+  {label:'Lundi – Vendredi', value:'9h — 19h'},
+  {label:'Samedi', value:'9h — 17h'},
+  {label:'Dimanche', value:'Sur rendez-vous'},
+  {label:'Visites en soirée', value:'Sur demande'}
+];
+
+/* ---- 11. ENGAGEMENTS ---- */
+const values = [
+  {icon:'🔎', title:'Transparence', text:"Une estimation argumentée, des honoraires connus dès le départ, aucun frais caché."},
+  {icon:'🎯', title:'Juste prix', text:"Un bien correctement estimé se vend vite et bien. Je ne surévalue jamais pour obtenir un mandat."},
+  {icon:'🤝', title:'Disponibilité', text:"Un seul interlocuteur, joignable directement, y compris le samedi et en soirée."},
+  {icon:'📍', title:'Ancrage local', text:"Bordeaux et sa métropole au quotidien : je connais les quartiers, leurs atouts et leurs prix réels."}
+];
+
+/* ---- 12. PARCOURS ---- */
+const timeline = [
+  {year:'2006', title:"Premiers pas dans l'immobilier", text:""},
+  {year:'2019', title:"Reprise d'études à 52 ans", text:"Licence en gestion des affaires immobilières"},
+  {year:'2021', title:"Création de L'IDEAL IMMO", text:"Une agence indépendante, à taille humaine"},
+  {year:'2024', title:"Développement sur la métropole bordelaise", text:""},
+  {year:'2026', title:"Plus de 250 biens vendus", text:"Et 1 000 clients accompagnés"}
+];
+
+/* ---- 13. BARÈME D'HONORAIRES (à remplacer par votre barème officiel) ---- */
+const fees = [
+  {range:"Jusqu'à 100 000 €", value:'6 500 € TTC (forfait)'},
+  {range:'De 100 001 € à 200 000 €', value:'6 % TTC'},
+  {range:'De 200 001 € à 350 000 €', value:'5 % TTC'},
+  {range:'De 350 001 € à 500 000 €', value:'4,5 % TTC'},
+  {range:'Au-delà de 500 000 €', value:'4 % TTC'},
+  {range:'Terrains et locaux commerciaux', value:'6 % TTC'}
+];
+
+
+/* ---------- Grille à la une (accueil) ---------- */
+function renderFeatured() {
+  var el = document.getElementById('gridFeatured');
+  if (!el) return;
+  var list = biens.filter(function(b){ return b.featured && b.status !== 'vendu'; }).slice(0, 3);
+  el.innerHTML = list.length ? list.map(cardOf).join('') : '';
+  el.querySelectorAll('[data-ref]').forEach(function(c){ c.addEventListener('click', function(){ openBien(c.dataset.ref); }); });
+}
+
+/* ---------- Article d'actualité (HTML string) ---------- */
+function newsCardHtml(n) {
+  return '<article class="newsitem" data-n="' + n.id + '">' +
+    '<div class="ni-img">' + img(n.photo, n.title) + '</div>' +
+    '<div class="ni-body">' +
+      '<span class="ni-date">' + n.tag + ' &middot; ' + n.date + '</span>' +
+      '<h3>' + n.title + '</h3>' +
+      '<p>' + n.excerpt + '</p>' +
+      '<span class="ni-read">Lire la suite &rsaquo;</span>' +
+    '</div></article>';
+}
+function bindNews(container) {
+  container.querySelectorAll('[data-n]').forEach(function(el){
+    el.addEventListener('click', function(){
+      var n = news.find(function(x){ return x.id === el.dataset.n; });
+      if (!n) return;
+      openModal(
+        '<div class="m-grid">' +
+          '<div class="m-media"><div class="m-slide">' + img(n.photo, n.title) + '</div></div>' +
+          '<div class="m-body">' +
+            '<div class="m-tags"><span>' + n.tag + '</span><span>' + n.date + '</span></div>' +
+            '<h2 style="margin-top:12px">' + n.title + '</h2>' +
+            '<p class="m-desc">' + n.full + '</p>' +
+            '<div class="m-actions">' +
+              '<a class="btn" href="mailto:' + EMAIL + '?subject=' + encodeURIComponent(n.title) + '">\u2709\uFE0F Me contacter \u00e0 ce sujet</a>' +
+              '<a class="btn btn-outline" href="tel:' + TEL + '">\ud83d\udcde ' + TEL_AFFICHE + '</a>' +
+            '</div>' +
+          '</div>' +
+        '</div>'
+      );
+    });
+  });
+}
+function renderNewsHome() {
+  var el = document.getElementById('gridNewsHome');
+  if (!el) return;
+  el.innerHTML = news.slice(0, 3).map(newsCardHtml).join('');
+  bindNews(el);
+}
+function renderNewsAll() {
+  var el = document.getElementById('gridNews');
+  if (!el) return;
+  el.innerHTML = news.map(newsCardHtml).join('');
+  bindNews(el);
+}
+
+const euro = n => new Intl.NumberFormat('fr-FR').format(Math.round(n)) + ' €';
+const $  = id => document.getElementById(id);
+
+const PLACEHOLDER = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+    <rect width="800" height="600" fill="#0d0d0d"/>
+    <g fill="none" stroke="#c9a84c" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"
+       transform="translate(400,300) scale(2.4) translate(-32,-32)">
+      <path d="M8 28 L32 8 L56 28 V56 H8 Z"/><path d="M26 56 V38 h12 v18"/>
+    </g>
+  </svg>`);
+
+function img(src, alt){
+  return `<img src="${src || PLACEHOLDER}" alt="${alt || ''}" loading="lazy"
+    onerror="this.onerror=null;this.src='${PLACEHOLDER}'" />`;
+}
+function setImg(id, src){
+  const el = $(id);
+  if(el){ el.src = src; el.onerror = () => { el.onerror = null; el.src = PLACEHOLDER; }; }
+}
+setImg('logoHeader', LOGO); setImg('logoFooter', LOGO);
+setImg('portrait', PORTRAIT); setImg('feesImg', FEES_IMG);
+
+/* ---------- Navigation par onglets ---------- */
+function setTab(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.toggle('active', p.id === 'page-' + name));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('on', b.dataset.tab === name));
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  // Faire défiler la barre pour que l'onglet actif soit visible
+  const activeBtn = document.querySelector('.tab-btn.on');
+  if (activeBtn) activeBtn.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+}
+
+document.querySelectorAll('.tab-btn').forEach(btn =>
+  btn.addEventListener('click', () => setTab(btn.dataset.tab)));
+
+// Liens internes cross-onglets
+document.addEventListener('click', e => {
+  const a = e.target.closest('[data-goto]');
+  if (a) { e.preventDefault(); setTab(a.dataset.goto); }
+});
+
+/* ---------- Onglets du moteur de recherche ---------- */
+document.querySelectorAll('.sb-tab').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('.sb-tab').forEach(b => b.classList.toggle('on', b === btn));
+  document.querySelectorAll('.sb-pane').forEach(p => p.classList.toggle('on', p.id === 'pane-' + btn.dataset.sb));
+}));
+
+/* ---------- Bandeau confiance ---------- */
+$('trust').innerHTML = services.map(s => `
+  <div class="trust-item">
+    <span class="trust-ic">${s.icon}</span>
+    <div>
+      <h3>${s.title}</h3>
+      <p>${s.text}</p>
+      <a href="#${s.tab === 'biens' ? 'biens' : 'vendre'}">En savoir plus ›</a>
+    </div>
+  </div>`).join('');
+
+/* ---------- Étapes de l'achat ---------- */
+$('stepsGrid').innerHTML = steps.map(s => `
+  <div class="trust-item" style="flex-direction:column;gap:10px">
+    <span class="trust-ic" style="font-weight:700;color:var(--gold-deep)">${s.no}</span>
+    <div><h3>${s.title}</h3><p>${s.text}</p></div>
+  </div>`).join('');
+
+/* ---------- Étapes de la vente ---------- */
+$('missionGrid').innerHTML = missions.map((m,i) => `
+  <div class="panelbox">
+    <div class="pb-head">${m.icon} Étape ${i+1} — ${m.title}</div>
+    <div class="pb-body">
+      <b style="color:var(--gold-deep);font-size:.82rem;text-transform:uppercase;letter-spacing:.04em">${m.sub}</b>
+      <p style="margin:8px 0 0;color:var(--muted);font-size:.94rem">${m.text}</p>
+    </div>
+  </div>`).join('');
+
+/* ============================================================
+   BIENS : recherche, filtres, affichage
+   ============================================================ */
+const budgets = [
+  {id:'b1', label:"Jusqu'à 200 000 €", max:200000},
+  {id:'b2', label:"Jusqu'à 300 000 €", max:300000},
+  {id:'b3', label:"Jusqu'à 450 000 €", max:450000},
+  {id:'b4', label:"Jusqu'à 700 000 €", max:700000},
+  {id:'b5', label:'Sans limite', max:Infinity}
+];
+let fChip = 'tous', shown = 6;
+
+const uniq = a => [...new Set(a)].filter(Boolean).sort((x,y) => String(x).localeCompare(String(y),'fr'));
+function fill(id, ph, vals, labelFn){
+  $(id).innerHTML = [`<option value="">${ph}</option>`]
+    .concat(vals.map(v => `<option value="${v}">${labelFn ? labelFn(v) : v}</option>`)).join('');
+}
+fill('fCity', 'Toutes les communes', uniq(biens.map(b => b.city)));
+fill('fType', 'Tous les types', uniq(biens.map(b => b.type)));
+fill('fRooms', 'Indifférent', uniq(biens.filter(b => b.rooms).map(b => b.rooms)).sort((a,b) => a-b),
+     v => v + (v > 1 ? ' pièces et +' : ' pièce et +'));
+fill('fBudget', 'Indifférent', budgets.map(b => b.id), id => budgets.find(b => b.id === id).label);
+
+function matching(){
+  const city = $('fCity').value, type = $('fType').value,
+        rooms = $('fRooms').value, bud = $('fBudget').value;
+  const max = bud ? budgets.find(b => b.id === bud).max : Infinity;
+  return biens.filter(b => {
+    if(city && b.city !== city) return false;
+    if(type && b.type !== type) return false;
+    if(rooms && b.rooms < Number(rooms)) return false;
+    if(b.price > max) return false;
+    if(fChip === 'coup'  && !b.featured) return false;
+    if(fChip === 'exclu' && !b.exclusive) return false;
+    if(fChip === 'dispo' && b.status !== 'disponible') return false;
+    return true;
+  }).sort((a,b) => {
+    const r = x => x.status === 'vendu' ? 2 : x.status === 'compromis' ? 1 : 0;
+    return r(a) - r(b) || (b.featured - a.featured) || (b.exclusive - a.exclusive);
+  });
+}
+
+function specsOf(b){
+  const s = [];
+  if(b.surface) s.push(b.surface + ' m²');
+  if(b.rooms)   s.push(b.rooms + ' pièces');
+  if(b.bedrooms)s.push(b.bedrooms + ' ch.');
+  if(b.land)    s.push('Terrain ' + b.land + ' m²');
+  if(b.dpe)     s.push('DPE ' + b.dpe);
+  return s.map(x => `<span>${x}</span>`).join('');
+}
+
+function cardOf(b){
+  return `<article class="bien" data-ref="${b.ref}">
+    <div class="bien-img">
+      ${img(b.photos && b.photos[0], b.title)}
+      <div class="flags">
+        ${b.exclusive ? '<span class="flag orange">Exclusivité</span>' : ''}
+        ${b.status === 'compromis' ? '<span class="flag">Sous compromis</span>' : ''}
+        ${b.status === 'vendu' ? '<span class="flag grey">Vendu</span>' : ''}
+      </div>
+    </div>
+    <div class="bien-body">
+      <span class="bien-type">${b.type}</span>
+      <h3>${b.title}</h3>
+      <span class="bien-city">📍 ${b.city} · Réf. ${b.ref}</span>
+      <div class="specs">${specsOf(b)}</div>
+      <div class="bien-foot">
+        <span class="bien-price">${euro(b.price)}</span>
+        <span class="bien-more">Voir le bien ›</span>
+      </div>
+    </div>
+  </article>`;
+}
+
+function renderBiens(){
+  const list = matching();
+  $('resCount').innerHTML = `<b>${list.length}</b> bien${list.length > 1 ? 's' : ''} correspondant${list.length > 1 ? 's' : ''} à votre recherche`;
+  $('gridBiens').innerHTML = list.length
+    ? list.slice(0, shown).map(cardOf).join('')
+    : `<div class="empty">Aucun bien ne correspond à cette recherche pour le moment.<br>
+       <a data-goto='contact' href='#'>Créez votre alerte personnalisée</a> : vous serez prévenu en priorité.</div>`;
+  $('gridBiens').querySelectorAll('[data-ref]').forEach(el =>
+    el.addEventListener('click', () => openBien(el.dataset.ref)));
+  $('btnMore').style.display = list.length > shown ? 'inline-flex' : 'none';
+}
+
+['fCity','fType','fRooms','fBudget'].forEach(id =>
+  $(id).addEventListener('change', () => { shown = 6; renderBiens(); }));
+
+document.querySelectorAll('.chip[data-f]').forEach(c => c.addEventListener('click', () => {
+  fChip = c.dataset.f; shown = 6;
+  document.querySelectorAll('.chip[data-f]').forEach(x => x.classList.toggle('on', x === c));
+  renderBiens();
+}));
+$('chipReset').addEventListener('click', () => {
+  ['fCity','fType','fRooms','fBudget'].forEach(id => $(id).value = '');
+  fChip = 'tous'; shown = 6;
+  document.querySelectorAll('.chip[data-f]').forEach(x => x.classList.toggle('on', x.dataset.f === 'tous'));
+  renderBiens();
+});
+$('btnMore').addEventListener('click', () => { shown += 6; renderBiens(); });
+$('btnSearch').addEventListener('click', () => {
+  shown = 6; renderBiens();
+  setTab('biens');
+});
+
+/* ---------- Raccourcis des autres onglets de recherche ---------- */
+$('btnQuickEst').addEventListener('click', () => {
+  $('estCity').value = $('qCity').value;
+  $('estSurface').value = $('qSurface').value;
+  $('estType').value = $('qType').value;
+  setTab('contact');
+  setTimeout(() => { if($('estName')) $('estName').focus(); }, 200);
+});
+$('btnPro').addEventListener('click', () => {
+  const sujet = `Projet ${$('pAct').value}${$('pCity').value ? ' — ' + $('pCity').value : ''}`;
+  window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(sujet)}`;
+});
+
+/* ============================================================
+   FENÊTRE MODALE
+   ============================================================ */
+function openModal(html){
+  $('modalBody').innerHTML = html;
+  $('backdrop').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(){
+  $('backdrop').classList.remove('open');
+  document.body.style.overflow = '';
+}
+$('modalX').addEventListener('click', closeModal);
+$('backdrop').addEventListener('click', e => { if(e.target.id === 'backdrop') closeModal(); });
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
+
+function carousel(photos, alt){
+  const list = (photos && photos.length) ? photos : [''];
+  if(list.length === 1) return `<div class="m-media"><div class="m-slide">${img(list[0], alt)}</div></div>`;
+  return `<div class="m-media" data-car data-i="0" data-n="${list.length}">
+    <div class="m-track">${list.map((p,i) => `<div class="m-slide">${img(p, alt + ' — photo ' + (i+1))}</div>`).join('')}</div>
+    <button class="m-arrow prev" data-prev aria-label="Précédent">‹</button>
+    <button class="m-arrow next" data-next aria-label="Suivant">›</button>
+    <div class="m-dots">${list.map((_,i) => `<button data-d="${i}" class="${i===0?'on':''}" aria-label="Photo ${i+1}"></button>`).join('')}</div>
+  </div>`;
+}
+function initCarousel(){
+  const el = $('modalBody').querySelector('[data-car]');
+  if(!el) return;
+  const track = el.querySelector('.m-track'), dots = Array.from(el.querySelectorAll('.m-dots button'));
+  const n = +el.dataset.n;
+  const go = i => {
+    const k = (i + n) % n; el.dataset.i = k;
+    track.style.transform = `translateX(-${k * 100}%)`;
+    dots.forEach((d,j) => d.classList.toggle('on', j === k));
+  };
+  el.querySelector('[data-prev]').addEventListener('click', () => go(+el.dataset.i - 1));
+  el.querySelector('[data-next]').addEventListener('click', () => go(+el.dataset.i + 1));
+  dots.forEach(d => d.addEventListener('click', () => go(+d.dataset.d)));
+}
+
+const LETTERS = ['A','B','C','D','E','F','G'];
+const dpeBlock = (letter, title) => !letter ? '' : `<div class="dpe"><h4>${title}</h4>
+  <div class="dpe-scale">${LETTERS.map(l => `<i class="d${l} ${l===letter?'on':''}">${l}</i>`).join('')}</div></div>`;
+
+function openBien(ref){
+  const b = biens.find(x => x.ref === ref); if(!b) return;
+  const sp = [
+    b.surface  ? [b.surface + ' m²', 'Surface'] : null,
+    b.rooms    ? [b.rooms, 'Pièces'] : null,
+    b.bedrooms ? [b.bedrooms, 'Chambres'] : null,
+    b.land     ? [b.land + ' m²', 'Terrain'] : null
+  ].filter(Boolean);
+  openModal(`<div class="m-grid">
+    ${carousel(b.photos, b.title)}
+    <div class="m-body">
+      <h2>${b.title}</h2>
+      <div class="m-tags">
+        <span>${b.type}</span><span>📍 ${b.city}</span><span>Réf. ${b.ref}</span>
+        ${b.exclusive ? '<span>Exclusivité</span>' : ''}
+        ${b.status === 'compromis' ? '<span>Sous compromis</span>' : ''}
+        ${b.status === 'vendu' ? '<span>Vendu</span>' : ''}
+      </div>
+      <div class="m-price">${euro(b.price)}</div>
+      <div class="m-fees">${b.fees || ''}</div>
+      <div class="m-specs">${sp.map(s => `<div><b>${s[0]}</b><span>${s[1]}</span></div>`).join('')}</div>
+      <p class="m-desc">${b.desc}</p>
+      ${dpeBlock(b.dpe, 'Consommation énergétique (DPE)')}
+      ${dpeBlock(b.ges, 'Émissions de gaz à effet de serre')}
+      <div class="m-actions">
+        <a class="btn" href="mailto:${EMAIL}?subject=${encodeURIComponent('Bien ' + b.ref + ' — ' + b.title)}">✉️ Demander une visite</a>
+        <a class="btn btn-outline" href="tel:${TEL}">📞 ${TEL_AFFICHE}</a>
+      </div>
+    </div>
+  </div>`);
+  initCarousel();
+}
+
+/* ---------- Actualités ---------- */
+$('gridNews').innerHTML = news.map(n => `
+  <article class="newsitem" data-n="${n.id}">
+    <div class="ni-img">${img(n.photo, n.title)}</div>
+    <div class="ni-body">
+      <span class="ni-date">${n.tag} · ${n.date}</span>
+      <h3>${n.title}</h3>
+      <p>${n.excerpt}</p>
+      <span class="ni-read">Lire la suite ›</span>
+    </div>
+  </article>`).join('');
+document.querySelectorAll('[data-n]').forEach(el => el.addEventListener('click', () => {
+  const n = news.find(x => x.id === el.dataset.n);
+  openModal(`<div class="m-grid">
+    <div class="m-media"><div class="m-slide">${img(n.photo, n.title)}</div></div>
+    <div class="m-body">
+      <div class="m-tags"><span>${n.tag}</span><span>${n.date}</span></div>
+      <h2 style="margin-top:12px">${n.title}</h2>
+      <p class="m-desc">${n.full}</p>
+      <div class="m-actions">
+        <a class="btn" href="mailto:${EMAIL}?subject=${encodeURIComponent(n.title)}">✉️ Me contacter à ce sujet</a>
+        <a class="btn btn-outline" href="tel:${TEL}">📞 ${TEL_AFFICHE}</a>
+      </div>
+    </div>
+  </div>`);
+}));
+
+/* ---------- Témoignages ---------- */
+$('gridQuotes').innerHTML = testimonials.map(t => `
+  <article class="quote" data-q="${t.id}">
+    <p>« ${t.excerpt} »</p>
+    <div class="qa"><b>${t.name}</b><span>${t.role}</span></div>
+  </article>`).join('');
+document.querySelectorAll('[data-q]').forEach(el => el.addEventListener('click', () => {
+  const t = testimonials.find(x => x.id === el.dataset.q);
+  openModal(`<div class="m-body" style="max-width:680px;margin:0 auto">
+    <h2>${t.name}</h2>
+    <div class="m-tags"><span>${t.role}</span></div>
+    <p class="m-desc">« ${t.full} »</p>
+  </div>`);
+}));
+
+/* ---------- Image du barème ---------- */
+$('feesImgWrap').addEventListener('click', () => openModal(
+  `<div class="m-body">${img($('feesImg').src, 'Barème des honoraires')}</div>`));
+
+/* ---------- Chiffres clés, parcours, honoraires, horaires ---------- */
+$('kpis').innerHTML = [
+  ['18+', "Années d'expérience"],
+  ['250+', 'Biens vendus'],
+  ['1 000+', 'Clients accompagnés'],
+  [biens.filter(b => b.status === 'disponible').length, 'Biens disponibles']
+].map(k => `<div class="kpi"><b>${k[0]}</b><span>${k[1]}</span></div>`).join('');
+
+$('tl').innerHTML = timeline.map(t =>
+  `<div class="tl-i"><b>${t.year}</b><span>${t.title}${t.text ? ' — ' + t.text : ''}</span></div>`).join('');
+
+$('feesBody').innerHTML = fees.map(f => `<tr><td>${f.range}</td><td>${f.value}</td></tr>`).join('');
+$('hoursBody').innerHTML = hours.map(h => `<tr><td>${h.label}</td><td>${h.value}</td></tr>`).join('');
+
+/* ---------- Simulateur ---------- */
+function sim(){
+  const v = id => parseFloat($(id).value) || 0;
+  const price = v('simPrice'), apport = v('simApport'), rate = v('simRate');
+  const years = Math.max(1, v('simYears'));
+  const notaire = price * parseFloat($('simNotaire').value);
+  const loan = Math.max(0, price + notaire - apport);
+  const n = years * 12, i = rate / 100 / 12;
+  const m = i > 0 ? loan * i / (1 - Math.pow(1 + i, -n)) : loan / n;
+  $('simMonthly').textContent  = loan > 0 ? euro(m) : '0 €';
+  $('simLoan').textContent     = euro(loan);
+  $('simInterest').textContent = euro(Math.max(0, m * n - loan));
+  $('simFees').textContent     = euro(notaire);
+}
+['simPrice','simApport','simRate','simYears','simNotaire'].forEach(id => {
+  $(id).addEventListener('input', sim); $(id).addEventListener('change', sim);
+});
+
+/* ---------- Formulaire d'estimation ---------- */
+$('estSubmit').addEventListener('click', () => {
+  const v = id => ($(id).value || '').trim();
+  const fb = $('estFeedback');
+  if(!v('estName') || !v('estEmail')){
+    fb.textContent = '⚠️ Merci d\'indiquer au moins votre nom et votre email.'; fb.style.color = '#c0392b'; return;
+  }
+  if(!$('estConsent').checked){
+    fb.textContent = '⚠️ Merci de cocher la case de consentement.'; fb.style.color = '#c0392b'; return;
+  }
+  const body = `Bonjour,\n\nJe souhaite obtenir une estimation / un rendez-vous.\n\n` +
+    `Nom : ${v('estName')}\nTéléphone : ${v('estPhone') || '—'}\nEmail : ${v('estEmail')}\n` +
+    `Type de bien : ${$('estType').value}\nVille / secteur : ${v('estCity') || '—'}\n` +
+    `Surface : ${v('estSurface') ? v('estSurface') + ' m²' : '—'}\n\nMon projet :\n${v('estMsg') || '—'}\n\nMerci d'avance.`;
+  fb.textContent = '✅ Votre messagerie s\'ouvre avec le récapitulatif…'; fb.style.color = 'var(--muted)';
+  window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent('Demande — ' + v('estName'))}&body=${encodeURIComponent(body)}`;
+});
+
+/* ---------- Démarrage ---------- */
+renderFeatured();
+renderNewsHome();
+renderNewsAll();
+renderBiens();
+sim();
+
+/* Synchroniser les filtres doublés page biens */
+(function(){
+  ['fCity2','fType2','fRooms2','fBudget2'].forEach(function(id){
+    var main = document.getElementById(id.replace('2',''));
+    var dup  = document.getElementById(id);
+    if (!dup || !main) return;
+    dup.innerHTML = main.innerHTML;
+    dup.addEventListener('change', function(){ main.value = dup.value; shown = 6; renderBiens(); });
+  });
+  var b2 = document.getElementById('btnSearch2');
+  if (b2) b2.addEventListener('click', function(){ shown = 6; renderBiens(); });
+  /* Logos footer multiples */
+  document.querySelectorAll('#logoFooter').forEach(function(fl){
+    fl.src = LOGO;
+    fl.onerror = function(){ fl.onerror = null; fl.src = PLACEHOLDER; };
+  });
+})();
+
+
+</script>
+</body>
+</html>

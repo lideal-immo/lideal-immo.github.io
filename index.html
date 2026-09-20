@@ -116,17 +116,30 @@ h1,h2,h3,h4{margin:0;font-weight:700;color:var(--ink);line-height:1.25}
 .burger{display:none;background:none;border:1px solid var(--line);padding:9px 11px;cursor:pointer;font-size:1.1rem}
 
 /* ---------- Hero + moteur de recherche ---------- */
-.hero{position:relative;background:#0d0d0d;color:var(--white);overflow:hidden}
+.hero{
+  position:relative;
+  background-color:#0d0d0d;
+  background-image:url('https://www.lideal-immo.fr/wp-content/uploads/go-x/u/afd0e3bb-3164-4f50-a2a7-2e0d9603ee10/l0,t0,w1920,h1280/image.jpg');
+  background-size:cover;
+  background-position:center 30%;
+  color:var(--white);
+  overflow:hidden;
+}
 .hero::before{
   content:'';position:absolute;inset:0;
   background:
-    linear-gradient(110deg, #0d0d0d 0%, #1a1714 55%, #222010 100%),
-    radial-gradient(760px 400px at 90% 10%, rgba(201,168,76,.22), transparent 62%);
+    linear-gradient(110deg,
+      rgba(13,13,13,.92) 0%,
+      rgba(13,13,13,.78) 42%,
+      rgba(26,22,10,.68) 70%,
+      rgba(13,13,13,.55) 100%
+    ),
+    radial-gradient(900px 400px at 88% 10%, rgba(201,168,76,.18), transparent 62%);
 }
 .hero .container{position:relative;padding-top:52px;padding-bottom:56px}
-.hero h1{color:var(--white);font-size:clamp(1.9rem,3.6vw,2.7rem);max-width:760px}
+.hero h1{color:var(--white);font-size:clamp(1.9rem,3.6vw,2.7rem);max-width:760px;text-shadow:0 2px 12px rgba(0,0,0,.55)}
 .hero h1 em{font-style:normal;color:var(--gold)}
-.hero .lead{margin:14px 0 0;max-width:640px;color:#c9b988;font-size:1.06rem}
+.hero .lead{margin:14px 0 0;max-width:640px;color:#e8d9a8;font-size:1.06rem;text-shadow:0 1px 6px rgba(0,0,0,.5)}
 
 .searchbox{margin-top:30px;background:var(--white);box-shadow:var(--shadow-lg)}
 .sb-tabs{display:flex;border-bottom:1px solid var(--line);background:#f5f0e8}

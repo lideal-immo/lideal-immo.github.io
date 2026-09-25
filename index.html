@@ -73,7 +73,7 @@ h1,h2,h3,h4{margin:0;font-weight:700;color:var(--ink);line-height:1.25}
 .sec-title .thin{font-weight:400;color:var(--muted)}
 .sec-rule{width:64px;height:4px;background:var(--gold);margin:12px 0 22px}
 .sec-head{margin-bottom:26px}
-.sec-head p{margin:0;color:var(--muted);max-width:720px}
+.sec-head p{margin:0;color:var(--muted)}
 .sec-head.center{text-align:center}
 .sec-head.center .sec-rule{margin-left:auto;margin-right:auto}
 
@@ -139,7 +139,7 @@ h1,h2,h3,h4{margin:0;font-weight:700;color:var(--ink);line-height:1.25}
 .hero .container{position:relative;padding-top:52px;padding-bottom:56px}
 .hero h1{color:var(--white);font-size:clamp(1.9rem,3.6vw,2.7rem);max-width:760px;text-shadow:0 2px 12px rgba(0,0,0,.55)}
 .hero h1 em{font-style:normal;color:var(--gold)}
-.hero .lead{margin:14px 0 0;max-width:640px;color:#e8d9a8;font-size:1.06rem;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.hero .lead{margin:14px 0 0;color:#e8d9a8;font-size:1.06rem;text-shadow:0 1px 6px rgba(0,0,0,.5)}
 
 .searchbox{margin-top:30px;background:var(--white);box-shadow:var(--shadow-lg)}
 .sb-tabs{display:flex;border-bottom:1px solid var(--line);background:#f5f0e8}
@@ -548,7 +548,7 @@ html { scroll-padding-top: 90px; }
         <div class="sb-body">
           <div class="sb-pane on" id="pane-acheter">
             <div class="sb-grid">
-              <div class="fld"><label for="fCity">Dans quelle commune ?</label><select id="fCity"></select></div>
+              <div class="fld"><label for="fCity">Localisation</label><select id="fCity"></select></div>
               <div class="fld"><label for="fBudget">Budget maximum</label><select id="fBudget"></select></div>
               <div class="fld"><label for="fType">Type de bien</label><select id="fType"></select></div>
               <div class="fld"><label for="fRooms">Pièce(s) min.</label><select id="fRooms"></select></div>
@@ -665,18 +665,10 @@ html { scroll-padding-top: 90px; }
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
-      </div>
-      <div class="f-cols">
-        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
-        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
-        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
-        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
-      </div>
-      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
-        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
       </div>
       <div class="f-legal">
         <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
@@ -696,7 +688,7 @@ html { scroll-padding-top: 90px; }
       <div class="sec-head">
         <h2 class="sec-title">Nos biens <span class="thin">à vendre</span></h2>
         <div class="sec-rule"></div>
-        <p>Maisons, appartements anciens et neufs, terrains et locaux commerciaux à Bordeaux et dans toute la Gironde.</p>
+        <p>Maisons, appartements anciens et neufs, terrains et locaux commerciaux en Région Bordeaulaise et dans toute le France.</p>
       </div>
       <div style="background:var(--white);border:1px solid var(--line);padding:20px;margin-bottom:22px">
         <div class="sb-grid" style="grid-template-columns:1.4fr 1fr 1fr 1fr auto">
@@ -731,18 +723,10 @@ html { scroll-padding-top: 90px; }
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
-      </div>
-      <div class="f-cols">
-        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
-        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
-        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
-        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
-      </div>
-      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
-        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
       </div>
       <div class="f-legal">
         <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
@@ -766,7 +750,7 @@ html { scroll-padding-top: 90px; }
       </div>
       <div class="trust" id="stepsGrid" style="grid-template-columns:repeat(5,1fr)"></div>
 
-      <div class="cols2" style="margin-top:38px">
+      <div class="cols2" style="margin-top:38px;grid-template-columns:1fr;max-width:640px;margin-left:auto;margin-right:auto">
         <div class="panelbox">
           <div class="pb-head">🧮 Simulateur de mensualité</div>
           <div class="pb-body">
@@ -790,21 +774,6 @@ html { scroll-padding-top: 90px; }
             <p class="legal">Simulation indicative, hors assurance emprunteur, frais de dossier et garanties. Elle ne constitue ni une offre de prêt ni un conseil en financement.</p>
           </div>
         </div>
-        <div class="panelbox">
-          <div class="pb-head">✅ Votre dossier acquéreur</div>
-          <div class="pb-body">
-            <table class="tbl"><tbody>
-              <tr><td>Pièce d'identité et justificatif de domicile</td><td>Obligatoire</td></tr>
-              <tr><td>Trois derniers bulletins de salaire</td><td>Obligatoire</td></tr>
-              <tr><td>Dernier avis d'imposition</td><td>Obligatoire</td></tr>
-              <tr><td>Justificatif d'apport personnel</td><td>Obligatoire</td></tr>
-              <tr><td>Attestation de financement bancaire</td><td>Recommandé</td></tr>
-              <tr><td>Tableau d'amortissement des crédits en cours</td><td>Si concerné</td></tr>
-            </tbody></table>
-            <p class="legal">Un dossier complet rend votre offre nettement plus crédible face au vendeur, et raccourcit les délais chez le notaire.</p>
-            <button class="btn btn-outline" data-goto="contact" style="margin-top:8px">Créer mon alerte personnalisée</button>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -818,18 +787,10 @@ html { scroll-padding-top: 90px; }
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
-      </div>
-      <div class="f-cols">
-        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
-        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
-        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
-        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
-      </div>
-      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
-        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
       </div>
       <div class="f-legal">
         <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
@@ -877,18 +838,10 @@ html { scroll-padding-top: 90px; }
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
-      </div>
-      <div class="f-cols">
-        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
-        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
-        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
-        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
-      </div>
-      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
-        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
       </div>
       <div class="f-legal">
         <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
@@ -930,9 +883,6 @@ html { scroll-padding-top: 90px; }
               <tr><td>Suivi jusqu'à l'acte authentique</td><td>Inclus</td></tr>
             </tbody></table>
             <p class="legal">Aucun versement ne peut être exigé avant la conclusion effective de la vente.</p>
-            <div id="feesImgWrap" style="margin-top:12px;border:1px solid var(--line);cursor:zoom-in">
-              <img id="feesImg" alt="Barème des honoraires L'IDEAL IMMO" />
-            </div>
           </div>
         </div>
       </div>
@@ -948,18 +898,10 @@ html { scroll-padding-top: 90px; }
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
-      </div>
-      <div class="f-cols">
-        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
-        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
-        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
-        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
-      </div>
-      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
-        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
       </div>
       <div class="f-legal">
         <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
@@ -994,18 +936,10 @@ html { scroll-padding-top: 90px; }
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
-      </div>
-      <div class="f-cols">
-        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
-        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
-        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
-        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
-      </div>
-      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
-        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
       </div>
       <div class="f-legal">
         <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
@@ -1058,18 +992,10 @@ html { scroll-padding-top: 90px; }
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
-      </div>
-      <div class="f-cols">
-        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
-        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
-        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
-        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
-      </div>
-      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
-        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
       </div>
       <div class="f-legal">
         <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
@@ -1145,18 +1071,10 @@ html { scroll-padding-top: 90px; }
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
-      </div>
-      <div class="f-cols">
-        <div><h4>Acheter</h4><ul><li><a href="#" data-goto="biens">Maisons à vendre</a></li><li><a href="#" data-goto="biens">Appartements à vendre</a></li><li><a href="#" data-goto="biens">Terrains constructibles</a></li><li><a href="#" data-goto="biens">Locaux commerciaux</a></li><li><a href="#" data-goto="acheter">Simulateur de mensualité</a></li></ul></div>
-        <div><h4>Vendre</h4><ul><li><a href="#" data-goto="contact">Estimation offerte</a></li><li><a href="#" data-goto="vendre">Les étapes de la vente</a></li><li><a href="#" data-goto="honoraires">Barème d'honoraires</a></li><li><a href="#" data-goto="vendre">Préparer son dossier</a></li></ul></div>
-        <div><h4>S'informer</h4><ul><li><a href="#" data-goto="actualites">Actualité du marché</a></li><li><a href="#" data-goto="accueil">Tous nos conseils</a></li><li><a href="#" data-goto="actualites">Comprendre le DPE</a></li><li><a href="#" data-goto="actualites">Frais de notaire</a></li></ul></div>
-        <div><h4>L'agence</h4><ul><li><a href="#" data-goto="agence">Qui suis-je</a></li><li><a href="#" data-goto="contact">Nous contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Confidentialité</a></li></ul></div>
-      </div>
-      <div class="f-zones"><h4>Nos secteurs d'intervention</h4>
-        <div class="zlist"><span>Bordeaux</span><span>Mérignac</span><span>Pessac</span><span>Talence</span><span>Bègles</span><span>Gradignan</span><span>Le Bouscat</span><span>Villenave-d'Ornon</span><span>Saint-Médard-en-Jalles</span><span>Eysines</span><span>Cenon</span><span>Floirac</span><span>Bruges</span><span>Toute la Gironde</span></div>
       </div>
       <div class="f-legal">
         <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
@@ -1189,7 +1107,7 @@ html { scroll-padding-top: 90px; }
    index.html et remplacez simplement les URL par les noms de fichiers,
    par exemple : const LOGO = 'logo.png';
    ------------------------------------------------------------ */
-const LOGO      = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/2e87c1be-5ca8-474a-8aa0-430903621f1f/l0,t0,w229,h158/image.png';
+const LOGO      = 'data:image/png;base64,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';
 const PORTRAIT  = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/9cb60855-7662-4060-ad8f-b797a1b6b0b9/l0,t0,w290,h377/image.png';
 const FEES_IMG  = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/a5e8a522-e51d-487c-836b-d0245f753664/l3,t0,w877,h491/image.png';
 const IMG_ACHAT = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/afd0e3bb-3164-4f50-a2a7-2e0d9603ee10/l0,t0,w1920,h1280/image.jpg';
@@ -1520,11 +1438,12 @@ $('missionGrid').innerHTML = missions.map((m,i) => `
    BIENS : recherche, filtres, affichage
    ============================================================ */
 const budgets = [
-  {id:'b1', label:"Jusqu'à 200 000 €", max:200000},
-  {id:'b2', label:"Jusqu'à 300 000 €", max:300000},
-  {id:'b3', label:"Jusqu'à 450 000 €", max:450000},
-  {id:'b4', label:"Jusqu'à 700 000 €", max:700000},
-  {id:'b5', label:'Sans limite', max:Infinity}
+  {id:'b1', label:"Jusqu'à 150 000 €", max:200000},
+  {id:'b2', label:"Jusqu'à 200 000 €", max:200000},
+  {id:'b3', label:"Jusqu'à 300 000 €", max:300000},
+  {id:'b4', label:"Jusqu'à 450 000 €", max:450000},
+  {id:'b5', label:"Jusqu'à 700 000 €", max:700000},
+  {id:'b6', label:'Sans limite', max:Infinity}
 ];
 let fChip = 'tous', shown = 6;
 
@@ -1755,10 +1674,6 @@ document.querySelectorAll('[data-q]').forEach(el => el.addEventListener('click',
     <p class="m-desc">« ${t.full} »</p>
   </div>`);
 }));
-
-/* ---------- Image du barème ---------- */
-$('feesImgWrap').addEventListener('click', () => openModal(
-  `<div class="m-body">${img($('feesImg').src, 'Barème des honoraires')}</div>`));
 
 /* ---------- Chiffres clés, parcours, honoraires, horaires ---------- */
 $('kpis').innerHTML = [

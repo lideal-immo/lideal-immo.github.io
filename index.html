@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>L'IDEAL IMMO — Agence immobilière à Bordeaux | Achat, vente, estimation</title>
-<meta name="description" content="L'IDEAL IMMO, agence immobilière indépendante à Bordeaux et en Gironde. Laurent Duchesne vous accompagne pour acheter, vendre ou faire estimer votre bien : maisons, appartements, terrains, locaux commerciaux." />
+<meta name="description" content="L'IDEAL IMMO, agence immobilière indépendante à Bordeaux et toute la France. Laurent Duchesne vous accompagne pour acheter, vendre ou faire estimer votre bien : maisons, appartements, terrains, locaux commerciaux." />
 <link rel="canonical" href="https://www.lideal-immo.fr/" />
 <meta name="geo.region" content="FR-33" />
 <meta name="geo.placename" content="Bordeaux, Gironde" />
@@ -293,9 +293,11 @@ table.tbl td:last-child{text-align:right;font-weight:700;color:var(--gold-deep);
 .hours tr:last-child td{border-bottom:none}
 
 /* ---------- Pied de page ---------- */
-.footer{background:var(--dark-900);color:#c9b988;font-size:.9rem}
+.footer{background:var(--dark-900);color:#c9b988;font-size:.9rem;position:relative;overflow:hidden}
 .footer a{color:#c9b988}
 .footer a:hover{color:var(--gold)}
+.f-portrait{position:absolute;left:0;top:0;height:100%;width:190px;object-fit:cover;object-position:top;display:block}
+.footer .container{margin:0;max-width:none;padding-left:220px}
 .f-top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 0;border-bottom:1px solid rgba(201,168,76,.25);flex-wrap:wrap}
 .f-logo{background:#000;padding:8px 12px;height:62px;display:flex;align-items:center}
 .f-logo img{height:100%;width:auto;object-fit:contain}
@@ -484,6 +486,8 @@ html { scroll-padding-top: 90px; }
   .tabnav-cta { display: none; }
   html { scroll-padding-top: 52px; }
   .tab-btn { padding: 0 13px; font-size: .82rem; }
+  .f-portrait { display: none; }
+  .footer .container { padding-left: 20px; }
 }
 
 </style>
@@ -497,11 +501,6 @@ html { scroll-padding-top: 90px; }
       <a href="tel:+33668500769">📞 06 68 50 07 69</a>
       <span class="sep hide-xs"></span>
       <a class="hide-xs" href="mailto:laurent.duchesne@lideal-immo.fr">✉️ laurent.duchesne@lideal-immo.fr</a>
-    </div>
-    <div class="u-right">
-      <a class="hide-xs" data-goto="honoraires" href="#">Honoraires</a>
-      <span class="sep hide-xs"></span>
-      <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer">Facebook</a>
     </div>
   </div>
 </div>
@@ -537,7 +536,7 @@ html { scroll-padding-top: 90px; }
   <section class="hero">
     <div class="container">
       <h1>Trouvez le bien qui vous ressemble,<br><em>vendez au juste prix</em></h1>
-      <p class="lead">Agence indépendante à Bordeaux et en Gironde. Un seul interlocuteur, du premier rendez-vous à la remise des clés.</p>
+      <p class="lead">Agence indépendante à Bordeaux et toute la France. Un seul interlocuteur, du premier rendez-vous à la remise des clés.</p>
 
       <div class="searchbox">
         <div class="sb-tabs">
@@ -657,22 +656,23 @@ html { scroll-padding-top: 90px; }
   <!-- Pied de page -->
   <!-- Pied de page commun -->
   <footer class="footer">
+    <img class="f-portrait" alt="Laurent Duchesne, fondateur de L'IDEAL IMMO" />
     <div class="container">
       <div class="f-top">
         <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
           <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
-          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la France</span></div>
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/lideal_immo_ld/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
       </div>
       <div class="f-legal">
-        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
-        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter].
       </div>
     </div>
   </footer>
@@ -688,7 +688,7 @@ html { scroll-padding-top: 90px; }
       <div class="sec-head">
         <h2 class="sec-title">Nos biens <span class="thin">à vendre</span></h2>
         <div class="sec-rule"></div>
-        <p>Maisons, appartements anciens et neufs, terrains et locaux commerciaux en Région Bordeaulaise et dans toute le France.</p>
+        <p>Maisons, appartements anciens et neufs, terrains et locaux commerciaux en Région Bordelaise et dans toute le France.</p>
       </div>
       <div style="background:var(--white);border:1px solid var(--line);padding:20px;margin-bottom:22px">
         <div class="sb-grid" style="grid-template-columns:1.4fr 1fr 1fr 1fr auto">
@@ -715,22 +715,23 @@ html { scroll-padding-top: 90px; }
   </section>
   <!-- Pied de page commun -->
   <footer class="footer">
+    <img class="f-portrait" alt="Laurent Duchesne, fondateur de L'IDEAL IMMO" />
     <div class="container">
       <div class="f-top">
         <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
           <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
-          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Région Bordelaise et toute le France</span></div>
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/lideal_immo_ld/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
       </div>
       <div class="f-legal">
-        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
-        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter].
       </div>
     </div>
   </footer>
@@ -779,22 +780,23 @@ html { scroll-padding-top: 90px; }
   </section>
   <!-- Pied de page commun -->
   <footer class="footer">
+    <img class="f-portrait" alt="Laurent Duchesne, fondateur de L'IDEAL IMMO" />
     <div class="container">
       <div class="f-top">
         <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
           <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
-          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Région Bordelaise et toute le France</span></div>
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/lideal_immo_ld/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
       </div>
       <div class="f-legal">
-        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
-        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter].
       </div>
     </div>
   </footer>
@@ -830,22 +832,23 @@ html { scroll-padding-top: 90px; }
   </section>
   <!-- Pied de page commun -->
   <footer class="footer">
+    <img class="f-portrait" alt="Laurent Duchesne, fondateur de L'IDEAL IMMO" />
     <div class="container">
       <div class="f-top">
         <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
           <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
-          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Région Bordelaise et toute le France</span></div>
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/lideal_immo_ld/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
       </div>
       <div class="f-legal">
-        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
-        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter].
       </div>
     </div>
   </footer>
@@ -890,22 +893,23 @@ html { scroll-padding-top: 90px; }
   </section>
   <!-- Pied de page commun -->
   <footer class="footer">
+    <img class="f-portrait" alt="Laurent Duchesne, fondateur de L'IDEAL IMMO" />
     <div class="container">
       <div class="f-top">
         <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
           <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
-          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Région Bordelaise et toute le France</span></div>
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/lideal_immo_ld/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
       </div>
       <div class="f-legal">
-        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
-        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter].
       </div>
     </div>
   </footer>
@@ -928,22 +932,23 @@ html { scroll-padding-top: 90px; }
   </section>
   <!-- Pied de page commun -->
   <footer class="footer">
+    <img class="f-portrait" alt="Laurent Duchesne, fondateur de L'IDEAL IMMO" />
     <div class="container">
       <div class="f-top">
         <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
           <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
-          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Région Bordelaise et toute le France</span></div>
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/lideal_immo_ld/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
       </div>
       <div class="f-legal">
-        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
-        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter].
       </div>
     </div>
   </footer>
@@ -984,22 +989,23 @@ html { scroll-padding-top: 90px; }
   </section>
   <!-- Pied de page commun -->
   <footer class="footer">
+    <img class="f-portrait" alt="Laurent Duchesne, fondateur de L'IDEAL IMMO" />
     <div class="container">
       <div class="f-top">
         <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
           <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
-          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Région Bordelaise et toute le France</span></div>
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/lideal_immo_ld/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
       </div>
       <div class="f-legal">
-        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
-        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter].
       </div>
     </div>
   </footer>
@@ -1063,22 +1069,23 @@ html { scroll-padding-top: 90px; }
   </section>
   <!-- Pied de page commun -->
   <footer class="footer">
+    <img class="f-portrait" alt="Laurent Duchesne, fondateur de L'IDEAL IMMO" />
     <div class="container">
       <div class="f-top">
         <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
           <span class="f-logo"><img id="logoFooter" alt="Logo L'IDEAL IMMO" /></span>
-          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Bordeaux et toute la Gironde</span></div>
+          <div><b style="color:#fff;display:block">L'IDEAL IMMO</b><span>Agence immobilière indépendante — Région Bordelaise et toute le France</span></div>
         </div>
         <div class="f-social">
           <a href="https://www.facebook.com/profile.php?id=61564937172190&locale=fr_FR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg></a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="https://www.instagram.com/lideal_immo_ld/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
           <a href="mailto:laurent.duchesne@lideal-immo.fr" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2"/></svg></a>
           <a href="tel:+33668500769" aria-label="Téléphone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 006 6L16 13l5 2v3a2 2 0 01-2.2 2A17 17 0 014 5.2 2 2 0 016 3z" stroke="currentColor" stroke-width="2"/></svg></a>
         </div>
       </div>
       <div class="f-legal">
-        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="#" data-goto="honoraires">Honoraires</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a><a href="#" data-goto="contact">Contact</a></div>
-        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter] · Les honoraires sont à la charge du vendeur sauf mention contraire dans l'annonce.
+        <div class="flinks"><a href="mentions-legales.html">Mentions légales</a><a href="https://www.lideal-immo.fr/politique-de-confidentialite/">Données personnelles</a></div>
+        © 2026 L'IDEAL IMMO — Laurent Duchesne · Carte professionnelle n° [à compléter] délivrée par la CCI de Bordeaux Gironde · RCS [à compléter].
       </div>
     </div>
   </footer>
@@ -1747,6 +1754,11 @@ sim();
   document.querySelectorAll('#logoFooter').forEach(function(fl){
     fl.src = LOGO;
     fl.onerror = function(){ fl.onerror = null; fl.src = PLACEHOLDER; };
+  });
+  /* Photo agence dans les pieds de page multiples */
+  document.querySelectorAll('.f-portrait').forEach(function(fp){
+    fp.src = PORTRAIT;
+    fp.onerror = function(){ fp.onerror = null; fp.src = PLACEHOLDER; };
   });
 })();
 

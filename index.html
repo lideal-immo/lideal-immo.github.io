@@ -490,7 +490,15 @@ html { scroll-padding-top: 90px; }
   .tabnav-cta { display: none; }
   html { scroll-padding-top: 52px; }
   .tab-btn { padding: 0 13px; font-size: .82rem; }
-  .f-portrait { display: none; }
+  .f-portrait {
+    position: static;
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 3px solid var(--gold);
+    margin: 26px auto 0;
+  }
   .footer .container { padding-left: 20px; }
 }
 

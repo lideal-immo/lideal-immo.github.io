@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mentions légales — L'IDEAL IMMO</title>
+<meta name="description" content="Mentions légales du site L'IDEAL IMMO, agence immobilière indépendante à Bordeaux : éditeur, carte professionnelle, hébergement, médiation." />
+<link rel="icon" href="logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<!--
+À COMPLÉTER AVANT MISE EN LIGNE : repérer les zones surlignées en jaune (classe "todo") :
+ statut juridique, adresse, SIRET (14 chiffres), RCS/RSAC, n° de TVA, mention de la carte pro,
+ garantie financière, assurance RCP, médiateur de la consommation, hébergeur.
+ Puis supprimer la classe "todo" (le surlignage) sur chaque élément complété.
+-->
+<style>
+:root{
+  --dark-900:#0d0d0d;--dark-800:#141414;
+  --gold:#c9a84c;--gold-light:#e0be72;--gold-deep:#a37828;--gold-pale:#f7f0df;--gold-soft:#efe3c4;
+  --ink:#1a1714;--muted:#6b6055;--line:#e2d9c8;--white:#fff;--off-white:#faf7f2;
+  --max:920px;--shadow:0 1px 4px rgba(13,13,13,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;background:var(--off-white);color:var(--ink);font-family:'Source Sans 3','Segoe UI',Arial,sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--gold-deep);text-decoration:none}
+a:hover{color:var(--gold);text-decoration:underline}
+h1,h2,h3{margin:0;font-weight:700;color:var(--ink);line-height:1.25}
+.container{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+.header{position:sticky;top:0;z-index:60;background:var(--white);border-bottom:1px solid var(--gold-soft);box-shadow:var(--shadow)}
+.header .container{max-width:1180px;display:flex;align-items:center;gap:18px;height:78px}
+.logo-plate{background:#000;padding:7px 12px;height:60px;display:flex;align-items:center;flex:0 0 auto}
+.logo-plate img{height:100%;width:auto;object-fit:contain}
+.brand{display:flex;flex-direction:column;line-height:1.15;margin-right:auto}
+.brand b{font-size:1.02rem;letter-spacing:.02em}
+.brand span{font-size:.78rem;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;font-weight:700;font-size:.9rem;background:var(--gold);color:var(--dark-900);white-space:nowrap}
+.btn:hover{background:var(--gold-light);color:var(--dark-900);text-decoration:none}
+
+.page-head{background:var(--dark-900);color:#fff;padding:40px 0 34px}
+.page-head h1{color:#fff;font-size:2rem}
+.page-head .rule{width:64px;height:4px;background:var(--gold);margin:14px 0 12px}
+.page-head p{margin:0;color:#c9b988;font-size:.95rem}
+
+main{padding:36px 0 56px}
+.card{background:var(--white);border:1px solid var(--line);padding:28px 30px;margin-bottom:22px}
+.card h2{font-size:1.25rem;margin-bottom:4px;color:var(--ink)}
+.card h2 .n{color:var(--gold-deep);margin-right:6px}
+.card .rule{width:44px;height:3px;background:var(--gold);margin:10px 0 16px}
+.card p{margin:0 0 12px}
+.card p:last-child{margin-bottom:0}
+.card ul{margin:0 0 12px;padding-left:20px}
+.card li{margin:4px 0}
+.summary{background:var(--gold-pale);border-left:4px solid var(--gold);padding:18px 22px;margin-bottom:22px}
+.summary b{display:block;margin-bottom:6px}
+.summary ul{margin:0;padding-left:20px}
+
+dl.id{display:grid;grid-template-columns:230px 1fr;margin:0;border-top:1px solid var(--line)}
+dl.id dt,dl.id dd{padding:10px 0;border-bottom:1px solid var(--line);margin:0}
+dl.id dt{font-weight:700;color:var(--muted);font-size:.86rem;text-transform:uppercase;letter-spacing:.04em;padding-right:16px}
+
+.tblwrap{overflow-x:auto;margin:6px 0 12px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:.93rem}
+th{background:var(--gold-pale);text-align:left;font-size:.76rem;text-transform:uppercase;letter-spacing:.04em;padding:10px 12px;border:1px solid var(--line)}
+td{padding:10px 12px;border:1px solid var(--line);vertical-align:top}
+
+.todo{background:#fff3b0;color:#5a4400;padding:0 5px;border-radius:2px}
+
+.footer{background:var(--dark-900);color:#c9b988;font-size:.88rem}
+.footer a{color:#c9b988}
+.footer a:hover{color:var(--gold)}
+.footer .container{max-width:1180px;padding-top:24px;padding-bottom:28px}
+.flinks{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+.flinks a.on{color:var(--gold);font-weight:700}
+
+@media(max-width:700px){
+  .header .container{height:68px}
+  .logo-plate{height:50px}
+  .brand{display:none}
+  .btn{margin-left:auto;padding:9px 14px;font-size:.84rem}
+  .page-head h1{font-size:1.55rem}
+  .card{padding:22px 18px}
+  dl.id{grid-template-columns:1fr}
+  dl.id dt{border-bottom:none;padding-bottom:0}
+  dl.id dd{padding-top:2px}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <a class="logo-plate" href="index.html" aria-label="L'IDEAL IMMO — Retour à l'accueil"><img src="logo.png" alt="Logo L'IDEAL IMMO" /></a>
+    <div class="brand"><b>L'IDEAL IMMO</b><span>Laurent Duchesne</span></div>
+    <a class="btn" href="index.html">← Retour au site</a>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="container">
+    <h1>Mentions légales</h1>
+    <div class="rule"></div>
+    <p>Informations légales relatives au site et à l'activité de L'IDEAL IMMO.</p>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+
+    <div class="card">
+      <h2><span class="n">1.</span>Éditeur du site</h2><div class="rule"></div>
+      <dl class="id">
+        <dt>Nom commercial</dt><dd>L'IDEAL IMMO</dd>
+        <dt>Exploitant</dt><dd>Laurent Duchesne, agent immobilier indépendant</dd>
+        <dt>Statut juridique</dt><dd><span class="todo">À COMPLÉTER : entrepreneur individuel / EURL / SASU… (et capital social le cas échéant)</span></dd>
+        <dt>Adresse professionnelle</dt><dd><span class="todo">À COMPLÉTER : adresse postale complète</span>, Bordeaux (Gironde)</dd>
+        <dt>SIREN</dt><dd>492 802 715</dd>
+        <dt>SIRET</dt><dd><span class="todo">À VÉRIFIER : 14 chiffres (le pied de page du site n'en affiche que 13)</span></dd>
+        <dt>Immatriculation</dt><dd><span class="todo">À COMPLÉTER : RCS ou RSAC de [ville du greffe]</span></dd>
+        <dt>TVA intracommunautaire</dt><dd><span class="todo">À VÉRIFIER : FR 20 492 802 715</span></dd>
+        <dt>Téléphone</dt><dd><a href="tel:+33668500769">06 68 50 07 69</a></dd>
+        <dt>Email</dt><dd><a href="mailto:laurent.duchesne@lideal-immo.fr">laurent.duchesne@lideal-immo.fr</a></dd>
+        <dt>Directeur de la publication</dt><dd>Laurent Duchesne</dd>
+      </dl>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">2.</span>Activité réglementée</h2><div class="rule"></div>
+      <p>L'activité d'agent immobilier est réglementée par la loi n° 70-9 du 2 janvier 1970 (loi « Hoguet ») et son décret d'application n° 72-678 du 20 juillet 1972.</p>
+      <dl class="id">
+        <dt>Carte professionnelle</dt><dd>N° 3301 2023 000 000 161, délivrée par la CCI de Bordeaux Gironde</dd>
+        <dt>Mention de la carte</dt><dd><span class="todo">À COMPLÉTER : ex. « Transaction sur immeubles et fonds de commerce »</span></dd>
+        <dt>Garantie financière</dt><dd><span class="todo">À COMPLÉTER : nom et adresse du garant et montant, OU mention « ne détient aucun fonds, effets ou valeurs »</span></dd>
+        <dt>Assurance responsabilité civile professionnelle</dt><dd><span class="todo">À COMPLÉTER : nom et adresse de l'assureur, numéro de contrat</span></dd>
+      </dl>
+      <p style="margin-top:14px">Les honoraires de l'agence sont présentés dans la rubrique « Honoraires » du site et rappelés dans chaque annonce. Le code de déontologie applicable aux professionnels de l'immobilier (décret n° 2015-1090 du 28 août 2015) est consultable sur <a href="https://www.legifrance.gouv.fr" target="_blank" rel="noopener noreferrer">Légifrance</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">3.</span>Médiation de la consommation</h2><div class="rule"></div>
+      <p>Conformément aux articles L.611-1 et suivants du Code de la consommation, tout consommateur peut recourir gratuitement à un médiateur de la consommation pour la résolution amiable d'un litige qui l'oppose à l'agence, après avoir adressé une réclamation écrite à L'IDEAL IMMO.</p>
+      <dl class="id">
+        <dt>Médiateur</dt><dd><span class="todo">À COMPLÉTER : nom, adresse postale et site internet du médiateur choisi</span></dd>
+      </dl>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">4.</span>Hébergement du site</h2><div class="rule"></div>
+      <dl class="id">
+        <dt>Hébergeur</dt><dd><span class="todo">À COMPLÉTER : raison sociale, adresse et téléphone de l'hébergeur</span></dd>
+      </dl>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">5.</span>Propriété intellectuelle</h2><div class="rule"></div>
+      <p>L'ensemble des éléments du site (textes, logo, photographies, mise en page, structure, code) est protégé par le Code de la propriété intellectuelle. Toute reproduction, représentation, modification ou exploitation, totale ou partielle, sans l'autorisation écrite préalable de L'IDEAL IMMO est interdite et peut constituer une contrefaçon.</p>
+      <p>Les photographies des biens proposés à la vente restent la propriété de leurs auteurs ou des mandants et ne peuvent être réutilisées sans accord.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">6.</span>Responsabilité</h2><div class="rule"></div>
+      <p>Les informations publiées sur ce site (annonces, prix, surfaces, diagnostics, actualités) sont fournies à titre indicatif et sous réserve d'erreur, d'omission ou d'évolution. Les biens présentés peuvent avoir été vendus ou retirés du marché sans que le site ait encore été mis à jour ; seule une confirmation directe de l'agence engage L'IDEAL IMMO.</p>
+      <p>Les simulateurs proposés (capacité d'achat, mensualités, frais de notaire) fournissent des estimations indicatives. Ils ne constituent ni une offre de prêt, ni un conseil en financement, ni une évaluation officielle d'un bien.</p>
+      <p>L'agence met tout en œuvre pour assurer l'accessibilité et la sécurité du site mais ne peut garantir l'absence d'interruption ou d'erreur.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">7.</span>Liens hypertextes</h2><div class="rule"></div>
+      <p>Le site contient des liens vers des sites tiers (par exemple Facebook et Instagram). L'IDEAL IMMO n'exerce aucun contrôle sur leur contenu et décline toute responsabilité quant aux informations qui y sont publiées et aux données qu'ils collectent.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">8.</span>Données personnelles et cookies</h2><div class="rule"></div>
+      <p>Le traitement de vos données personnelles, vos droits et l'utilisation (ou non) de cookies sont détaillés dans notre page <a href="donnees-personnelles.html">Données personnelles</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">9.</span>Droit applicable</h2><div class="rule"></div>
+      <p>Le présent site et ses mentions légales sont soumis au droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français sont compétents, sous réserve des règles de compétence impératives applicables aux consommateurs.</p>
+      <p style="color:var(--muted);font-size:.9rem">Dernière mise à jour : 28 septembre 2026.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="flinks">
+      <a href="index.html">Accueil</a>
+      <a href="mentions-legales.html" class="on">Mentions légales</a>
+      <a href="donnees-personnelles.html">Données personnelles</a>
+    </div>
+    © 2026 L'IDEAL IMMO — Laurent Duchesne · CPI 3301 2023 000 000 161 délivrée par la CCI de Bordeaux Gironde.
+  </div>
+</footer>
+
+</body>
+</html>

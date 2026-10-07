@@ -555,6 +555,7 @@ html { scroll-padding-top: 90px; }
     </div>
   </section>
 
+  <!-- BANDEAU "Ils m'ont fait confiance" (désactivé temporairement)
   <section class="section alt">
     <div class="container">
       <div class="sec-head center">
@@ -564,6 +565,7 @@ html { scroll-padding-top: 90px; }
       <div class="grid-quotes" id="gridQuotes"></div>
     </div>
   </section>
+  FIN BANDEAU "Ils m'ont fait confiance" -->
 
   <!-- Pied de page -->
   <!-- Pied de page commun -->
@@ -1271,7 +1273,7 @@ function openBien(ref){
   initCarousel();
 }
 
-/* ---------- Témoignages ---------- */
+/* ---------- Témoignages (désactivé : bandeau "Ils m'ont fait confiance" commenté)
 $('gridQuotes').innerHTML = testimonials.map(t => `
   <article class="quote" data-q="${t.id}">
     <p>« ${t.excerpt} »</p>
@@ -1285,6 +1287,7 @@ document.querySelectorAll('[data-q]').forEach(el => el.addEventListener('click',
     <p class="m-desc">« ${t.full} »</p>
   </div>`);
 }));
+*/
 
 /* ---------- Chiffres clés, parcours, honoraires, horaires ---------- */
 $('kpis').innerHTML = [

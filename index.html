@@ -8,11 +8,11 @@
 <link rel="canonical" href="https://lideal-immo.github.io/" />
 <meta name="geo.region" content="FR-33" />
 <meta name="geo.placename" content="Bordeaux, Gironde" />
-<link rel="icon" href="https://www.lideal-immo.fr/wp-content/uploads/go-x/u/2e87c1be-5ca8-474a-8aa0-430903621f1f/l0,t0,w229,h158/image.png" />
+<link rel="icon" href="logo.png" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="L'IDEAL IMMO — Agence immobilière à Bordeaux" />
 <meta property="og:description" content="Acheter, vendre, faire estimer : un accompagnement personnalisé à Bordeaux et en Gironde." />
-<meta property="og:image" content="https://www.lideal-immo.fr/wp-content/uploads/go-x/u/2e87c1be-5ca8-474a-8aa0-430903621f1f/l0,t0,w229,h158/image.png" />
+<meta property="og:image" content="https://lideal-immo.github.io/logo.png" />
 <meta property="og:url" content="https://lideal-immo.github.io/" />
 <meta property="og:locale" content="fr_FR" />
 <script type="application/ld+json">
@@ -869,16 +869,10 @@ html { scroll-padding-top: 90px; }
 /* ---- 1. IMAGES DU SITE -------------------------------------
    Logo et portrait pointent vers des fichiers placés à côté de ce
    index.html (logo.png, Laurent.jpg ; l'image d'en-tête Paysage.jpg
-   est appelée dans le CSS .hero). Les autres URL pointent vers les
-   images de votre site actuel : pour les rendre autonomes, remplacez-les
-   aussi par des noms de fichiers.
+   est appelée dans le CSS .hero).
    ------------------------------------------------------------ */
 const LOGO      = 'logo.png';
 const PORTRAIT  = 'Laurent.jpg';
-const FEES_IMG  = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/a5e8a522-e51d-487c-836b-d0245f753664/l3,t0,w877,h491/image.png';
-const IMG_ACHAT = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/afd0e3bb-3164-4f50-a2a7-2e0d9603ee10/l0,t0,w1920,h1280/image.jpg';
-const IMG_EXPER = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/416c105d-a3f4-4614-a7b8-8a7371e5a896/l4,t3,w1913,h1274/image.jpg';
-const IMG_VENTE = 'https://www.lideal-immo.fr/wp-content/uploads/go-x/u/35a7cb4f-cf1a-46f7-b875-241888cd1ee0/l121,t81,w1678,h1118/image.jpg';
 
 const EMAIL = 'lideal.immo.ld@google.com';
 const TEL   = '+33668500769';
@@ -939,11 +933,11 @@ const biens = [
 
 /* ---- 3. MES SERVICES (accueil) ---- */
 const services = [
-  {img:IMG_ACHAT, icon:'🔑', title:'Vous voulez acheter ?', tab:'biens',
+  {icon:'🔑', title:'Vous voulez acheter ?', tab:'biens',
    text:"Que vous rêviez d'une maison familiale, d'un appartement ou d'un investissement, je vous guide à chaque étape. Avec une connaissance approfondie du marché et une écoute attentive, je m'engage à trouver le bien qui correspond parfaitement à vos attentes."},
-  {img:IMG_EXPER, icon:'📊', title:'Une expertise ?', tab:'vendre',
+  {icon:'📊', title:'Une expertise ?', tab:'vendre',
    text:"Vous souhaitez connaître la véritable valeur de votre bien ? Grâce à mon expertise en évaluation, je vous propose une estimation précise et objective, basée sur une analyse approfondie du marché et des caractéristiques de votre propriété."},
-  {img:IMG_VENTE, icon:'🤝', title:'Vous voulez vendre ?', tab:'vendre',
+  {icon:'🤝', title:'Vous voulez vendre ?', tab:'vendre',
    text:"Confiez-moi cette étape cruciale : je saurai valoriser votre propriété et vous accompagner tout au long du processus, de l'évaluation à la signature finale. Je m'engage à mettre tout en œuvre pour vendre rapidement et au meilleur prix."}
 ];
 
@@ -1057,7 +1051,7 @@ function setImg(id, src){
   if(el){ el.src = src; el.onerror = () => { el.onerror = null; el.src = PLACEHOLDER; }; }
 }
 setImg('logoHeader', LOGO); setImg('logoFooter', LOGO);
-setImg('portrait', PORTRAIT); setImg('feesImg', FEES_IMG);
+setImg('portrait', PORTRAIT);
 
 /* ---------- Navigation par onglets ---------- */
 function setTab(name) {

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lideal-immo.github.io/sitemap.xml
